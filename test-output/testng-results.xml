@@ -1,36 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="116588" started-at="2014-09-30T17:14:46Z" finished-at="2014-09-30T17:16:43Z">
+  <suite name="Default suite" duration-ms="54281" started-at="2014-11-10T16:26:36Z" finished-at="2014-11-10T16:27:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="116588" started-at="2014-09-30T17:14:46Z" finished-at="2014-09-30T17:16:43Z">
-      <class name="CRM_Mobile_Tests.AddReceiptsToWorkOrder">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@2dc663a3]" name="setUpSuite" is-config="true" duration-ms="60801" started-at="2014-09-30T19:14:46Z" finished-at="2014-09-30T19:15:47Z">
+    <test name="Default test" duration-ms="54281" started-at="2014-11-10T16:26:36Z" finished-at="2014-11-10T16:27:31Z">
+      <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder">
+        <test-method status="FAIL" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="setUpSuite" is-config="true" duration-ms="0" started-at="2014-11-10T17:26:36Z" finished-at="2014-11-10T17:26:36Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Problem with create Webdrive instantion: org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 7ef5b26e2c6b47d9a6e0f1ad0cc99176 has already finished, and can't receive further commands
+You can learn more at https://saucelabs.com/jobs/7ef5b26e2c6b47d9a6e0f1ad0cc99176
+For help, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/
+Command duration or timeout: 54.04 seconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'rafal', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 7ef5b26e2c6b47d9a6e0f1ad0cc99176 has already finished, and can't receive further commands
+You can learn more at https://saucelabs.com/jobs/7ef5b26e2c6b47d9a6e0f1ad0cc99176
+For help, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/
+Command duration or timeout: 54.04 seconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'rafal', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.testng.Assert.fail(Assert.java:94)
+	at UI.CRM_Base.ConnectionWithApplication(CRM_Base.java:52)
+	at CRM_Mobile_Tests.AddPhotoToWorkOrder.setUpSuite(AddPhotoToWorkOrder.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="AddPurchaseOrdersToReceipts()[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@2dc663a3]" name="AddPurchaseOrdersToReceipts" duration-ms="53984" started-at="2014-09-30T19:15:47Z" finished-at="2014-09-30T19:16:41Z">
+        <test-method status="FAIL" signature="Test()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="Test" duration-ms="1" started-at="2014-11-10T17:27:31Z" finished-at="2014-11-10T17:27:31Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:120)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddPurchaseOrdersToReceipts -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@2dc663a3]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2014-09-30T19:16:42Z" finished-at="2014-09-30T19:16:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddPurchaseOrdersToReceipts status=SUCCESS method=AddReceiptsToWorkOrder.AddPurchaseOrdersToReceipts()[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@2dc663a3] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Test -->
+        <test-method status="SKIP" signature="MetodSetUp()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="MetodSetUp" is-config="true" duration-ms="0" started-at="2014-11-10T17:27:31Z" finished-at="2014-11-10T17:27:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MetodSetUp -->
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-10T17:27:31Z" finished-at="2014-11-10T17:27:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@2dc663a3]" name="tearDown" is-config="true" duration-ms="696" started-at="2014-09-30T19:16:42Z" finished-at="2014-09-30T19:16:43Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-11-10T17:27:31Z" finished-at="2014-11-10T17:27:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- CRM_Mobile_Tests.AddReceiptsToWorkOrder -->
+      </class> <!-- CRM_Mobile_Tests.AddPhotoToWorkOrder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

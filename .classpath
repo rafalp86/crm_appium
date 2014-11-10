@@ -4,10 +4,10 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Appium/Java LIB/selenium-server-standalone-2.42.2.jar"/>
-	<classpathentry kind="lib" path="C:/Appium/Java LIB/sauce_testng-2.1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Appium/Java LIB/sauce_java_common-2.1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Appium/Java LIB/saucerest-1.0.19.jar"/>
-	<classpathentry kind="lib" path="C:/Appium/Java LIB/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="./Lib/selenium-server-standalone-2.43.1.jar"/>
+	<classpathentry kind="lib" path="./Lib/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="./Lib/saucerest-1.0.19.jar"/>
+	<classpathentry kind="lib" path="./Lib/sauce_testng-2.1.4.jar"/>
+	<classpathentry kind="lib" path="./Lib/sauce_java_common-2.1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
