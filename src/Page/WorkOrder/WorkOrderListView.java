@@ -47,6 +47,7 @@ public class WorkOrderListView extends UI{
 	 return GetTextFromAllChildren(WoDetalis);
 	}
 	
+	
 	public WorkOrderListViewSubMenu Submenu () {
 		SubMenu.Open();
 		return new WorkOrderListViewSubMenu();
