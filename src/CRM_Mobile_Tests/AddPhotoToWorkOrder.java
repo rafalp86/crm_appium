@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Action.Navigate;
+import Action.TestData;
 import Page.ActivitiesView;
 import Page.WorkOrder.WorkOrderDetailsView;
 import Page.WorkOrder.WorkOrderDetailsViewSubMenu;
@@ -19,7 +20,7 @@ public class AddPhotoToWorkOrder extends CRM_Base {
 	private WorkOrderListView WorkOrderList;
 	private String AssignEmployee="None";
 	private String ActivitiesMessage;
-	private String WoCustomer="2500 Holding Group LLC  (3)";
+	private String WoCustomer=TestData.TestCustomer;
 	private String WoDescription="Appium test";
 	private Random RandInt= new Random();
 	

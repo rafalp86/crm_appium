@@ -66,7 +66,9 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
 	
 	protected  void Screenshot(String fileName) {
         try {
-            FileOutputStream out = new FileOutputStream("..\\" + fileName + "_CRM.png");
+        	File ScreenshotDir = new File("Screenshot");
+        	if (!ScreenshotDir.exists()) ScreenshotDir.mkdir();
+            FileOutputStream out = new FileOutputStream(".\\Screenshot\\" + fileName + "_CRM.png");
             out.write(((org.openqa.selenium.TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES));
             out.close();
         } catch (Exception e) {
