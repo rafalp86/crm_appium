@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54281" started-at="2014-11-10T16:26:36Z" finished-at="2014-11-10T16:27:31Z">
+  <suite name="Default suite" duration-ms="54436" started-at="2014-11-10T16:37:23Z" finished-at="2014-11-10T16:38:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54281" started-at="2014-11-10T16:26:36Z" finished-at="2014-11-10T16:27:31Z">
+    <test name="Default test" duration-ms="54436" started-at="2014-11-10T16:37:23Z" finished-at="2014-11-10T16:38:18Z">
       <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder">
-        <test-method status="FAIL" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="setUpSuite" is-config="true" duration-ms="0" started-at="2014-11-10T17:26:36Z" finished-at="2014-11-10T17:26:36Z">
+        <test-method status="FAIL" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@1844b009]" name="setUpSuite" is-config="true" duration-ms="0" started-at="2014-11-10T17:37:23Z" finished-at="2014-11-10T17:37:23Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Problem with create Webdrive instantion: org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 7ef5b26e2c6b47d9a6e0f1ad0cc99176 has already finished, and can't receive further commands
-You can learn more at https://saucelabs.com/jobs/7ef5b26e2c6b47d9a6e0f1ad0cc99176
+              <![CDATA[Problem with create Webdrive instantion: org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 1a2327ab1dfa46b3b2230530b9e6e982 has already finished, and can't receive further commands
+You can learn more at https://saucelabs.com/jobs/1a2327ab1dfa46b3b2230530b9e6e982
 For help, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/
-Command duration or timeout: 54.04 seconds
+Command duration or timeout: 54.10 seconds
 Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
 System info: host: 'rafal', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 7ef5b26e2c6b47d9a6e0f1ad0cc99176 has already finished, and can't receive further commands
-You can learn more at https://saucelabs.com/jobs/7ef5b26e2c6b47d9a6e0f1ad0cc99176
+              <![CDATA[java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id 1a2327ab1dfa46b3b2230530b9e6e982 has already finished, and can't receive further commands
+You can learn more at https://saucelabs.com/jobs/1a2327ab1dfa46b3b2230530b9e6e982
 For help, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/
-Command duration or timeout: 54.04 seconds
+Command duration or timeout: 54.10 seconds
 Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
 System info: host: 'rafal', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
@@ -58,7 +58,7 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="FAIL" signature="Test()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="Test" duration-ms="1" started-at="2014-11-10T17:27:31Z" finished-at="2014-11-10T17:27:31Z">
+        <test-method status="FAIL" signature="Test()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@1844b009]" name="Test" duration-ms="1" started-at="2014-11-10T17:38:18Z" finished-at="2014-11-10T17:38:18Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -90,15 +90,15 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
-        <test-method status="SKIP" signature="MetodSetUp()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="MetodSetUp" is-config="true" duration-ms="0" started-at="2014-11-10T17:27:31Z" finished-at="2014-11-10T17:27:31Z">
+        <test-method status="SKIP" signature="MetodSetUp()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@1844b009]" name="MetodSetUp" is-config="true" duration-ms="0" started-at="2014-11-10T17:38:18Z" finished-at="2014-11-10T17:38:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MetodSetUp -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-10T17:27:31Z" finished-at="2014-11-10T17:27:31Z">
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@1844b009]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2014-11-10T17:38:18Z" finished-at="2014-11-10T17:38:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@45812b51]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-11-10T17:27:31Z" finished-at="2014-11-10T17:27:31Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@1844b009]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-11-10T17:38:18Z" finished-at="2014-11-10T17:38:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

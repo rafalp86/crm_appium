@@ -3,7 +3,7 @@
 <suite name="Default suite">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder"/>
+      <class name="CRM_Mobile_Tests.DisplayInformationPage"/>
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
