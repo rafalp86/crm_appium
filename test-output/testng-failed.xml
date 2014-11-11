@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder">
+      <class name="CRM_Mobile_Tests.DisplayWorkOrderDetails">
         <methods>
-          <include name="setUpSuite"/>
-          <include name="Test"/>
+          <include name="tearDown"/>
+          <include name="ScreenshotWhenFail"/>
+          <include name="SchouldCheckStatusAllButtonsInPage"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- CRM_Mobile_Tests.AddPhotoToWorkOrder -->
+      </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderDetails -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,10 +17,15 @@ public class GetBy  {
      {
          return By.xpath("//"+ClassName.toString()+"[@text='" + Text + "']");
      }
+	 public static By ClassAndTextContains(UI.Class ClassName, String Text)
+     {
+         return By.xpath("//"+ClassName.toString()+"[contains(text(),'"+Text+"')]");
+     }
 	 public static By ControlDesc(String desc)
  	 {
 		 return By.xpath("//"+Class.ImageView.toString()+"[@content-desc='" + desc + "']");
  	 }   
+	//a[contains(text(),\'Video\')]
      public static By Text(String message) {
  		return GetBy.ClassAndText(Class.TextView, message);
  	}

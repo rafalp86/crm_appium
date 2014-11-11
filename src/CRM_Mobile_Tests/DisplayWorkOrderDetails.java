@@ -17,26 +17,28 @@ import UI.UI.Class;
 
 import Action.Navigate;
 import Action.SubMenu;
+import Action.TestData;
 
 public class DisplayWorkOrderDetails extends CRM_Base {
 
+	private WorkOrderListView WorkOrderList;
 	private WorkOrderDetailsView WorkOrder;
 	private WorkOrderDetailsViewSubMenu WorkOrderSubMenu;
-	private int WorkOrderTestID=1234;
+	private String expectedDescription="Appium test";
 	
 	@BeforeClass
     public void setUp()
 	 {
 		ConnectionWithApplication("DisplayWorkOrderDetails");
 		System.out.println("Test :DisplayWorkOrderDetails");
-		WorkOrder= Navigate.ToFirstWorkOrder();
+		WorkOrderList=Navigate.ToWorkOrderList().Submenu().Customers(TestData.TestCustomer);
+		 WorkOrder= WorkOrderList.SelectWorkOrderByDescription(expectedDescription);
 	 }
 	@Test 
 	  public void ShouldDisplayProperWoDetalis() 
 	    {
 		 String IDNotContains="#";
-		 String expectedDescription="Phone System Problem";
-		 String expectedCustomer="Pioneer Engineering & Environmental Services";
+		 String expectedCustomer="2500 Holding Group LLC";
 		 
 		 Assert.assertFalse(WorkOrder.WoID.contains(IDNotContains), "Wo ID :"+ WorkOrder.WoID);
 		 Assert.assertTrue(WorkOrder.WODescription.contains(expectedDescription), "WO description :"+ WorkOrder.WODescription);
@@ -61,10 +63,10 @@ public class DisplayWorkOrderDetails extends CRM_Base {
 	{
 		WorkOrder.ScrollDown();
 		Screenshot("SchouldCheckStatusAllButtonsInPage");
-		Assert.assertTrue(WorkOrder.ButtonIsEnabled("Timer Start"));
+		Assert.assertFalse(WorkOrder.ButtonIsEnabled("Timer Start"));
 		Assert.assertFalse(WorkOrder.ButtonIsEnabled("Timer Stop"));
-		Assert.assertFalse(WorkOrder.ButtonIsEnabled("Confirm Work Order"));
-		Assert.assertTrue(WorkOrder.ButtonIsEnabled("Complete Work Order"));
+		Assert.assertTrue(WorkOrder.ButtonIsEnabled("Confirm Work Order"));
+		Assert.assertFalse(WorkOrder.ButtonIsEnabled("Complete Work Order"));
 		Assert.assertFalse(WorkOrder.ButtonIsEnabled("Get a signature"));
 		Assert.assertTrue(WorkOrder.ButtonIsEnabled("Enter receipts"));
 		Assert.assertTrue(WorkOrder.ButtonIsEnabled("Show store photos"));
