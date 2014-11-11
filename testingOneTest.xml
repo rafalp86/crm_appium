@@ -6,7 +6,6 @@
 	 <class name="CRM_Mobile_Tests.DisplayInformationPage"/>
       <class name="CRM_Mobile_Tests.DisplayWorkOrderList"/>
       <class name="CRM_Mobile_Tests.DisplayMainMenu"/>
-	  <class name="CRM_Mobile_Tests.ExtendWorkOrderDate"/>
 	  <class name="CRM_Mobile_Tests.AddNewActivitiesAndCheckResults"/>
 	  <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder"/>
 	  <class name="CRM_Mobile_Tests.AddReceiptsToWorkOrder"/>
