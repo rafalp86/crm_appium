@@ -17,6 +17,10 @@ public class GetBy  {
      {
          return By.xpath("//"+ClassName.toString()+"[@text='" + Text + "']");
      }
+	 public static By ResourceId(String resorceid)
+ 	 {
+		 return By.xpath("//*[@resource-id='" + resorceid + "']");
+ 	 }
 	 public static By ClassAndTextContains(UI.Class ClassName, String Text)
      {
          return By.xpath("//"+ClassName.toString()+"[contains(text(),'"+Text+"')]");

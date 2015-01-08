@@ -1,66 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90834" started-at="2014-11-11T18:52:40Z" finished-at="2014-11-11T18:54:11Z">
+  <suite name="Default suite" duration-ms="71" started-at="2014-11-15T17:56:56Z" finished-at="2014-11-15T17:56:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="90834" started-at="2014-11-11T18:52:40Z" finished-at="2014-11-11T18:54:11Z">
-      <class name="CRM_Mobile_Tests.DisplayWorkOrderDetails">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a]" name="setUp" is-config="true" duration-ms="66843" started-at="2014-11-11T19:52:40Z" finished-at="2014-11-11T19:53:47Z">
+    <test name="Default test" duration-ms="71" started-at="2014-11-15T17:56:56Z" finished-at="2014-11-15T17:56:56Z">
+      <class name="CRM_Mobile_Tests.TestA">
+        <test-method status="PASS" signature="Test()[pri:0, instance:CRM_Mobile_Tests.TestA@223017cd]" name="Test" duration-ms="30" started-at="2014-11-15T18:56:56Z" finished-at="2014-11-15T18:56:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="SchouldCheckStatusAllButtonsInPage()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a]" name="SchouldCheckStatusAllButtonsInPage" duration-ms="10565" started-at="2014-11-11T19:53:47Z" finished-at="2014-11-11T19:53:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SchouldCheckStatusAllButtonsInPage -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2014-11-11T19:54:00Z" finished-at="2014-11-11T19:54:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SchouldCheckStatusAllButtonsInPage status=SUCCESS method=DisplayWorkOrderDetails.SchouldCheckStatusAllButtonsInPage()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="ShouldDisplayAllItemInSubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a]" name="ShouldDisplayAllItemInSubMenu" duration-ms="6646" started-at="2014-11-11T19:54:00Z" finished-at="2014-11-11T19:54:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldDisplayAllItemInSubMenu -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-11T19:54:07Z" finished-at="2014-11-11T19:54:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ShouldDisplayAllItemInSubMenu status=SUCCESS method=DisplayWorkOrderDetails.ShouldDisplayAllItemInSubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="ShouldDisplayProperWoDetalis()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a]" name="ShouldDisplayProperWoDetalis" duration-ms="1707" started-at="2014-11-11T19:54:07Z" finished-at="2014-11-11T19:54:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldDisplayProperWoDetalis -->
-        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2014-11-11T19:54:09Z" finished-at="2014-11-11T19:54:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ShouldDisplayProperWoDetalis status=SUCCESS method=DisplayWorkOrderDetails.ShouldDisplayProperWoDetalis()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7760b68a]" name="tearDown" is-config="true" duration-ms="1200" started-at="2014-11-11T19:54:09Z" finished-at="2014-11-11T19:54:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderDetails -->
+        </test-method> <!-- Test -->
+      </class> <!-- CRM_Mobile_Tests.TestA -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
