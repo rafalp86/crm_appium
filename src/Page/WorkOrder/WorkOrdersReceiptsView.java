@@ -54,8 +54,8 @@ public class WorkOrdersReceiptsView extends UI {
 	}
 	
 	private void AddReceipt(By tab,String buttonText){
-		Click(tab);
-		WaitAndClick(GetBy.ClassAndText(Class.Button ,buttonText));
+		Tap(tab);
+		WaitAndTap(GetBy.ClassAndText(Class.Button ,buttonText));
 	}
 	
 	public void GetAllAmountFromSelectedTab(){
@@ -82,6 +82,6 @@ public class WorkOrdersReceiptsView extends UI {
 	private void CloseAlert()
 	{
 		if (ElementExist(AlertHeader, 0))
-			Click(OKButton);
+			Tap(OKButton);
 	}
 }

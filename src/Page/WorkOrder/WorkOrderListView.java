@@ -29,7 +29,7 @@ public class WorkOrderListView extends UI{
 	}
 	public WorkOrderDetailsView ChooseFirstWorkOrder()
 	{
-		Click(WoItem);
+		Tap(WoItem);
 		return new WorkOrderDetailsView();
 	}
 	
@@ -60,7 +60,7 @@ public class WorkOrderListView extends UI{
 	public WorkOrderDetailsView SelectWorkOrderByDescription(String WODescription) {
 		By Description = GetBy.ClassAndText(Class.TextView, WODescription);
 		Gestures.ScollTo(Description);
-		Click(Description);
+		Tap(Description);
 		return new WorkOrderDetailsView();
 	}
 }

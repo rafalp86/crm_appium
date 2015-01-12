@@ -27,37 +27,46 @@ public class WorkOrderListViewSubMenu extends UI {
 	
 	public WorkOrderListView Sorting()
 	{
-		Click(SortingItem);
+		Tap(SortingItem);
 		return new WorkOrderListView();
 	}
 	
 	public WorkOrderListView AddFlter()
 	{
-		Click(AddFlterItem);
+		Tap(AddFlterItem);
 		return new WorkOrderListView();
 	}
 	
 	public WorkOrderListView Customers(String CustomerName)
 	{
-		Click(CustomersItem);
-		WaitAndClick(GetBy.ClassAndText(Class.TextView, CustomerName));
+		Tap(CustomersItem);
+		WaitAndTap(GetBy.ClassAndText(Class.TextView, CustomerName));
 		return new WorkOrderListView();
+	}
+	
+	public boolean CustomersExist(String CustomerName)
+	{
+		Tap(CustomersItem);
+		if (ElementExist(GetBy.ClassAndText(Class.TextView, CustomerName),3)) 
+				return true;
+		
+		return false;
 	}
 	
 	public WorkOrderListView ShowPutOnHold()
 	{
-		Click(ShowPutOnHoldItem);
+		Tap(ShowPutOnHoldItem);
 		return new WorkOrderListView();
 	}
 	public WorkOrderListView SwitchUser()
 	{
-		Click(SwitchUserItem);
+		Tap(SwitchUserItem);
 		return new WorkOrderListView();
 	}
 	
 	public WorkOrderListView Refresh()
 	{
-		Click(RefreshItem);
+		Tap(RefreshItem);
 		return new WorkOrderListView();
 	}
 }

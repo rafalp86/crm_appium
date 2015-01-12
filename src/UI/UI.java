@@ -57,19 +57,19 @@ public class UI extends CRM_Base {
 		return temp;
 	}
 	
-	protected static void Click(By element)
+	protected static void Tap(By element)
 	{  // sprawdziæ dzia³aje click JS
 		System.out.println("Click in  " +element);
 		driver.findElements(element).get(0).click();
 	}
-	protected static void  ScrollAndClick(By element) {
+	protected static void  ScrollAndTap(By element) {
 		Gestures.ScollTo(element);
-		Click(element);
+		Tap(element);
 	}
-	protected static void ClickIfExist(By element,Integer ... timeout)
+	protected static void TapIfExist(By element,Integer ... timeout)
 	  {
 	       if(ElementExist(element, timeout.length>0?timeout[0]:2))
-	    	   Click(element);
+	    	   Tap(element);
 	  }
 	 
 	protected static WebElement Find(By element)
@@ -88,10 +88,10 @@ public class UI extends CRM_Base {
 		return elememnts.get(elememnts.size()-1);
 	}
 	
-	protected static void WaitAndClick(By element)
+	protected static void WaitAndTap(By element)
 	  {	
 		WaitForElement(element, 5);
-		Click(element);
+		Tap(element);
 	 }
 	 
 	protected boolean WaitForElement(String Xpath)

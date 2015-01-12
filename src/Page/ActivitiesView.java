@@ -28,8 +28,8 @@ public class ActivitiesView extends UI{
 		WaitForElement(GetBy.Text("Assign activity to Employee"), 5);
 		UI.SetText(GetBy.className(Class.EditText),Message);
 		Screenshot("AddActivityView");
-		Click(AcceptButton);
+		Tap(AcceptButton);
 		WaitForElement(GetBy.Text("Activity succcessfuly created!"), 5);
-		Click(AcceptButton);
+		Tap(AcceptButton);
 	}
 }

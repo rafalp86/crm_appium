@@ -33,20 +33,20 @@ public class WorkOrderDetailsViewSubMenu extends UI{
 
 	public void AddActivity(String Employee, String Message) {
 		By AcceptButton= GetBy.className(Class.Button);
-		WaitAndClick(AddActivity);
+		WaitAndTap(AddActivity);
 		WaitForElement(GetBy.Text("Assign activity to Employee"), 5);
 		UI.SetText(GetBy.className(Class.EditText),Message);
-		Click(AcceptButton);
+		Tap(AcceptButton);
 		WaitForElement(GetBy.Text("Activity succcessfuly created!"), 5);
-		Click(AcceptButton);
+		Tap(AcceptButton);
 	}
 	public void AddPhotoFromCamera()
 	{
 		By ShutterButton= GetBy.ControlDesc("Shutter button");
-		Click(AddPhoto);
-		WaitAndClick(GetBy.Text("Device camera"));
+		Tap(AddPhoto);
+		WaitAndTap(GetBy.Text("Device camera"));
 		Screenshot("AddPhoto_ChooseDevice");
-		WaitAndClick(GetBy.Text("after job"));
+		WaitAndTap(GetBy.Text("after job"));
 		//WaitAndClick(ShutterButton);
 		//Screenshot("AddPhoto_GetPhoto");
 		//FindLast(GetBy.className(Class.ImageView)).click();
@@ -56,7 +56,7 @@ public class WorkOrderDetailsViewSubMenu extends UI{
 	@SuppressWarnings("deprecation")
 	public WorkOrderListView ExtendDate(Date EDate, String ExtendingReason)
 	{
-		WaitAndClick(ExtendDate);
+		WaitAndTap(ExtendDate);
 		
 		DateFormat monthf = new SimpleDateFormat("MMM");
 		DateFormat dayf = new SimpleDateFormat("dd");
@@ -69,7 +69,7 @@ public class WorkOrderDetailsViewSubMenu extends UI{
 		SetText(EditArea.get(1), Sday);	
 		SetText(EditArea.get(2), Syear);	
 		Screenshot("WOExtendDateCalender");
-		Click(GetBy.ClassAndText(Class.Button,"Done"));
+		Tap(GetBy.ClassAndText(Class.Button,"Done"));
 		SetWOExtendingReason(ExtendingReason);
 		return new WorkOrderListView();
 	}
@@ -82,7 +82,7 @@ public class WorkOrderDetailsViewSubMenu extends UI{
 		WaitForElement(FormTitle, 5);
 		SetText(textArea, ExtendingReason);
 		Screenshot("WOExtendReasonForm");
-		Click(OKButton);
-		WaitAndClick(OKButton);
+		Tap(OKButton);
+		WaitAndTap(OKButton);
 	}
 }

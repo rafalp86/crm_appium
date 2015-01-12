@@ -37,6 +37,10 @@ public class GetBy  {
      {
     	return GetBy.className(Class.Button);
      }
+     public static By ButtonByText(String buttonText)
+     {
+    	return ClassAndText(Class.Button,buttonText);
+     }
      
      
 	}

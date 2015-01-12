@@ -21,7 +21,7 @@ public class ReceiptEntryView extends UI {
 	
 	public ReceiptEntryView(){
 		WaitForLoading();	
-		if(ElementExist(EntryTypeFormTitle, 1))Click(SelectButton);
+		if(ElementExist(EntryTypeFormTitle, 1))Tap(SelectButton);
 	}
 	private void WaitForLoading(){
 		WaitForDisappear(WaitMessage);
@@ -32,11 +32,11 @@ public class ReceiptEntryView extends UI {
 		SetText(EditDescription, reo.description);
 		Gestures.ScollTo(EditSuppliers);
 		SetText(EditPrice, reo.price);
-		Click(EditSuppliers);
+		Tap(EditSuppliers);
 		WaitForElement(Selectsupplier, 2);
-		ScrollAndClick(GetBy.ClassAndText(Class.CheckedTextView, reo.suppliers));
+		ScrollAndTap(GetBy.ClassAndText(Class.CheckedTextView, reo.suppliers));
 		Screenshot("ReceiptEntryView");
-		Click(SaveButton);
+		Tap(SaveButton);
 	}
 	
 	

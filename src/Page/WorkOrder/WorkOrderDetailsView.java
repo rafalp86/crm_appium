@@ -104,18 +104,18 @@ public class WorkOrderDetailsView extends UI{
 	}
 	public ActivitiesView ShowActivities() {
 		ScrollDown();
-		Click(ShowActivitiesButton);
+		Tap(ShowActivitiesButton);
 		return new ActivitiesView();
 	}
 	public WorkOrdersReceiptsView EnterReceipts(){
-		ScrollAndClick(EnterReceiptsButton);
+		ScrollAndTap(EnterReceiptsButton);
 		return new WorkOrdersReceiptsView();
 	}
 	public void TimerStart(){
-		Click(TimerStartButton);
+		Tap(TimerStartButton);
 	}
 	public void TimerStop(){
-		Click(TimerStopButton);
+		Tap(TimerStopButton);
 	}
 	
 	public boolean TimerStartIsEnabled(){

@@ -35,26 +35,26 @@ public class Menu extends UI {
  }
  public WorkOrderListView ChooseWorkOrderList()
  {
-	 UI.WaitAndClick(WorkOrderListItem) ;
+	 UI.WaitAndTap(WorkOrderListItem) ;
 	 return new WorkOrderListView();
  }
  
  public void ChooseTimeSheet()
  {
-	 UI.WaitAndClick(TimeSheetItem) ;
+	 UI.WaitAndTap(TimeSheetItem) ;
  }
  
  public void ChooseClientList()
  {
-	 UI.WaitAndClick(ClientListItem) ;
+	 UI.WaitAndTap(ClientListItem) ;
  }
  public void ChooseCalenderEvents()
  {
-	 UI.WaitAndClick(CalenderEventsItem) ;
+	 UI.WaitAndTap(CalenderEventsItem) ;
  }
  public void ChooseVendorStatistic()
  {
-	 UI.WaitAndClick(By.className("test")) ;
+	 UI.WaitAndTap(By.className("test")) ;
  }
  
  public void ScrollDown()

@@ -26,14 +26,14 @@ public class InformationView extends UI{
 	
 	public Menu Procced()
 	{
-	  UI.Click(ProccedButton);
+	  UI.Tap(ProccedButton);
 	  return new Menu();
 	}
 	
 	public void CloseAlerts()
 	{
-		if (UI.ElementExist(SdCardMemoryInfo,1))  UI.Click(ProccedButton);
-		if (UI.ElementExist(SdCardMemoryInstalation,0))  UI.Click(ProccedButton);
+		if (UI.ElementExist(SdCardMemoryInfo,1))  UI.Tap(ProccedButton);
+		if (UI.ElementExist(SdCardMemoryInstalation,0))  UI.Tap(ProccedButton);
 		//more alert
 	}
 	

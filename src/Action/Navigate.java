@@ -7,6 +7,7 @@ import Page.InformationView;
 import Page.Menu;
 import Page.WorkOrder.WorkOrderDetailsView;
 import Page.WorkOrder.WorkOrderListView;
+import Page.WorkOrder.*;
 import UI.GetBy;
 import UI.UI;
 
@@ -26,13 +27,15 @@ public class Navigate extends UI {
 		Menu mainMenu=ToMainMenu();
 		return  mainMenu.ChooseWorkOrderList();
 	}
+	
 	public static WorkOrderDetailsView ToFirstWorkOrder()
 	{		
 		// now select first work order 
 		return ToWorkOrderList().ChooseFirstWorkOrder();
 	}
+	
 	public static Menu ToMainMenu(){
-		ClickIfExist(GetBy.Text("Friendly Solutions"),1);
+		TapIfExist(GetBy.Text("Friendly Solutions"),1);
 		if (UI.ElementExist(ProccedButton,2))
 		{
 			return (new InformationView()).Procced();
@@ -41,7 +44,7 @@ public class Navigate extends UI {
 	}
 	
     public static  InformationView ToInformationPage(){ 
-    	ClickIfExist(GetBy.Text("Friendly Solutions"),1);
+    	TapIfExist(GetBy.Text("Friendly Solutions"),1);
     	String textInPage=UI.GetTextFromAllChildren(null);
     	if (textInPage.contains("#"))
     	{
@@ -50,6 +53,7 @@ public class Navigate extends UI {
     	if (textInPage.contains("Work order list"))	Back();
 		return new InformationView();
 	}
+    
     public static WorkOrderDetailsView ToWorkOrderByDescription(String Description,String ...WoCustomer)
     {
     	 String Customer= WoCustomer.length>0?WoCustomer[0]:TestData.TestCustomer;
@@ -59,5 +63,17 @@ public class Navigate extends UI {
 		 WorkOrderList.Submenu().Customers(Customer);
 		 
 		 return WorkOrderList.SelectWorkOrderByDescription(Description);
+    }
+
+    public static NewWorkOrderView ToNewWorkOrderView()
+    {
+    	// TODO : refaktoring przeniesienie do innej klasy
+    	String CustomerName="2500 Holding Group LLC*";
+    	String newWorkOrderItem="Create new work order";
+    	Back();Back(); ToMainMenu().ChooseClientList();
+    	WaitAndTap(GetBy.ClassAndText(Class.Button, "0-9"));
+    	WaitAndTap(GetBy.Text(CustomerName));
+    	WaitAndTap(GetBy.Text(newWorkOrderItem));
+    	return new NewWorkOrderView();
     }
 }
