@@ -88,6 +88,13 @@ public class WorkOrderDetailsView extends UI{
 	public void ScrollDown() {
 		Gestures.ScollTo(LocationAssetsButton);
 		
+		// Fix tymczasowy , dodaæ czekanie za zakoñczenie skrolowania
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			
+		} 
+		
 	}
 	public void ScrollUp() {
 		// TODO Auto-generated method stub
