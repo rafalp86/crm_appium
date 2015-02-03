@@ -92,7 +92,7 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
    	   }
    	   else
    	   {
-   		   capabilities.setCapability("app","sauce-storage:mobile.zip");
+   		
    		capabilities.setCapability("app","sauce-storage:CLMMobileClient-release.apk");
    		
    	   }
