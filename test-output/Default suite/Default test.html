@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/15/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 12 20:38:32 CET 2015</td>
+<td>Started on:</td><td>Thu Apr 09 19:34:12 CEST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>160 seconds (160836 ms)</td>
+<tr><td>Total time:</td><td>254 seconds (254142 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,27 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CRM_Mobile_Tests.SetWorkOrderToTest.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.SetWorkOrderToTest</td>
-<td><div><pre>org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id d8a20241d2814cec86a2c71b0133dfce has already finished, and can&apos;t receive further commands
-You can learn more at https://saucelabs.com/jobs/d8a20241d2814cec86a2c71b0133dfce
-For help, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/
-Command duration or timeout: 206 milliseconds
+<td title='CRM_Mobile_Tests.SetWorkOrderToTest.setUp()'><b>setUp</b><br>Test class: CRM_Mobile_Tests.SetWorkOrderToTest</td>
+<td><div><pre>java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find crm emulator.) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 252.29 seconds
 Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
-System info: host: &apos;rafal&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: d8a20241d2814cec86a2c71b0133dfce
+System info: host: &apos;rafal&apos;, ip: &apos;192.168.222.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browserName=Android, desired={platformVersion=4.2, deviceName=Android Emulator, platformName=Android, app-package=com.friendlysol.android, proxy={&quot;proxyAutoconfigUrl&quot;:&quot;http://127.0.0.1:19876/proxy.pac&quot;,&quot;proxyType&quot;:&quot;PAC&quot;}, app-activity=.activities.StartActivity, webdriver.remote.quietExceptions=true}, webdriver.remote.sessionid=d8a20241d2814cec86a2c71b0133dfce, platformVersion=4.2, databaseEnabled=false, platformName=Android, deviceName=Android Emulator, app-package=com.friendlysol.android, webStorageEnabled=false, proxy={&quot;proxyAutoconfigUrl&quot;:&quot;http://127.0.0.1:19876/proxy.pac&quot;,&quot;proxyType&quot;:&quot;PAC&quot;}, app-activity=.activities.StartActivity, webdriver.remote.quietExceptions=true, warnings={}, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-	at UI.CRM_Base.CloseConnection(CRM_Base.java:63)
-	at CRM_Mobile_Tests.SetWorkOrderToTest.tearDown(SetWorkOrderToTest.java:47)
+	at org.testng.Assert.fail(Assert.java:94)
+	at UI.CRM_Base.ConnectionWithApplication(CRM_Base.java:52)
+	at CRM_Mobile_Tests.SetWorkOrderToTest.setUp(SetWorkOrderToTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -104,8 +92,8 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browser
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -117,30 +105,17 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browser
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1033421452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1033421452'><pre>org.openqa.selenium.UnsupportedCommandException: ERROR The test with session id d8a20241d2814cec86a2c71b0133dfce has already finished, and can&apos;t receive further commands
-You can learn more at https://saucelabs.com/jobs/d8a20241d2814cec86a2c71b0133dfce
-For help, please check https://docs.saucelabs.com/reference/troubleshooting-common-error-messages/
-Command duration or timeout: 206 milliseconds
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1918877421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1918877421'><pre>java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find crm emulator.) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 252.29 seconds
 Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
-System info: host: &apos;rafal&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: d8a20241d2814cec86a2c71b0133dfce
+System info: host: &apos;rafal&apos;, ip: &apos;192.168.222.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browserName=Android, desired={platformVersion=4.2, deviceName=Android Emulator, platformName=Android, app-package=com.friendlysol.android, proxy={&quot;proxyAutoconfigUrl&quot;:&quot;http://127.0.0.1:19876/proxy.pac&quot;,&quot;proxyType&quot;:&quot;PAC&quot;}, app-activity=.activities.StartActivity, webdriver.remote.quietExceptions=true}, webdriver.remote.sessionid=d8a20241d2814cec86a2c71b0133dfce, platformVersion=4.2, databaseEnabled=false, platformName=Android, deviceName=Android Emulator, app-package=com.friendlysol.android, webStorageEnabled=false, proxy={&quot;proxyAutoconfigUrl&quot;:&quot;http://127.0.0.1:19876/proxy.pac&quot;,&quot;proxyType&quot;:&quot;PAC&quot;}, app-activity=.activities.StartActivity, webdriver.remote.quietExceptions=true, warnings={}, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:468)
-	at UI.CRM_Base.CloseConnection(CRM_Base.java:63)
-	at CRM_Mobile_Tests.SetWorkOrderToTest.tearDown(SetWorkOrderToTest.java:47)
+	at org.testng.Assert.fail(Assert.java:94)
+	at UI.CRM_Base.ConnectionWithApplication(CRM_Base.java:52)
+	at CRM_Mobile_Tests.SetWorkOrderToTest.setUp(SetWorkOrderToTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -149,8 +124,8 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browser
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -162,12 +137,199 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browser
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
 </pre></div></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.SetWorkOrderToTest@3d7b218b</td></tr>
+<td>CRM_Mobile_Tests.SetWorkOrderToTest@7a8e6dae</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddReceiptsToWorkOrder.setUpSuite()'><b>setUpSuite</b><br>Test class: CRM_Mobile_Tests.AddReceiptsToWorkOrder</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddReceiptsToWorkOrder@32f39ae5</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddNewActivitiesAndCheckResults.setUpSuite()'><b>setUpSuite</b><br>Test class: CRM_Mobile_Tests.AddNewActivitiesAndCheckResults</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.ExtendWorkOrderDate.setUpSuite()'><b>setUpSuite</b><br>Test class: CRM_Mobile_Tests.ExtendWorkOrderDate</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderList.setUp()'><b>setUp</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderList</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayMainMenu.setUp()'><b>setUp</b><br>Test class: CRM_Mobile_Tests.DisplayMainMenu</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayMainMenu@173e4a85</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.setUp()'><b>setUp</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayInformationPage.setUpSuite()'><b>setUpSuite</b><br>Test class: CRM_Mobile_Tests.DisplayInformationPage</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayInformationPage@3c1d635a</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddPhotoToWorkOrder.setUpSuite()'><b>setUpSuite</b><br>Test class: CRM_Mobile_Tests.AddPhotoToWorkOrder</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddNewActivitiesAndCheckResults.MetodSetUp()'><b>MetodSetUp</b><br>Test class: CRM_Mobile_Tests.AddNewActivitiesAndCheckResults</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddNewActivitiesAndCheckResults.MetodSetUp()'><b>MetodSetUp</b><br>Test class: CRM_Mobile_Tests.AddNewActivitiesAndCheckResults</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.ExtendWorkOrderDate.MetodSetUp()'><b>MetodSetUp</b><br>Test class: CRM_Mobile_Tests.ExtendWorkOrderDate</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddPhotoToWorkOrder.MetodSetUp()'><b>MetodSetUp</b><br>Test class: CRM_Mobile_Tests.AddPhotoToWorkOrder</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.SetWorkOrderToTest.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.SetWorkOrderToTest</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.SetWorkOrderToTest@7a8e6dae</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddReceiptsToWorkOrder.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.AddReceiptsToWorkOrder</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddReceiptsToWorkOrder@32f39ae5</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddNewActivitiesAndCheckResults.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.AddNewActivitiesAndCheckResults</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddNewActivitiesAndCheckResults.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.AddNewActivitiesAndCheckResults</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.ExtendWorkOrderDate.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.ExtendWorkOrderDate</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderList.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderList</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderList.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderList</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayMainMenu.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayMainMenu</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayMainMenu@173e4a85</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayMainMenu.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayMainMenu</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayMainMenu@173e4a85</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayMainMenu.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayMainMenu</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayMainMenu@173e4a85</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayInformationPage.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayInformationPage</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayInformationPage@3c1d635a</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddPhotoToWorkOrder.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.AddPhotoToWorkOrder</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.SetWorkOrderToTest.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.SetWorkOrderToTest</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.SetWorkOrderToTest@7a8e6dae</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddReceiptsToWorkOrder.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.AddReceiptsToWorkOrder</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddReceiptsToWorkOrder@32f39ae5</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddNewActivitiesAndCheckResults.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.AddNewActivitiesAndCheckResults</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.ExtendWorkOrderDate.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.ExtendWorkOrderDate</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderList.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderList</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayMainMenu.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.DisplayMainMenu</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayMainMenu@173e4a85</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayInformationPage.tearDownSuite()'><b>tearDownSuite</b><br>Test class: CRM_Mobile_Tests.DisplayInformationPage</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayInformationPage@3c1d635a</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddPhotoToWorkOrder.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.AddPhotoToWorkOrder</td>
+<td></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -177,35 +339,13 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browser
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CRM_Mobile_Tests.SetWorkOrderToTest.SetWorkOrdersTest()'><b>SetWorkOrdersTest</b><br>Test class: CRM_Mobile_Tests.SetWorkOrderToTest</td>
-<td><div><pre>org.openqa.selenium.UnsupportedCommandException: ERROR Job is not in progress
-Command duration or timeout: 93.19 seconds
-Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
-System info: host: &apos;rafal&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: d8a20241d2814cec86a2c71b0133dfce
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browserName=Android, desired={platformVersion=4.2, deviceName=Android Emulator, platformName=Android, app-package=com.friendlysol.android, proxy={&quot;proxyAutoconfigUrl&quot;:&quot;http://127.0.0.1:19876/proxy.pac&quot;,&quot;proxyType&quot;:&quot;PAC&quot;}, app-activity=.activities.StartActivity, webdriver.remote.quietExceptions=true}, webdriver.remote.sessionid=d8a20241d2814cec86a2c71b0133dfce, platformVersion=4.2, databaseEnabled=false, platformName=Android, deviceName=Android Emulator, app-package=com.friendlysol.android, webStorageEnabled=false, proxy={&quot;proxyAutoconfigUrl&quot;:&quot;http://127.0.0.1:19876/proxy.pac&quot;,&quot;proxyType&quot;:&quot;PAC&quot;}, app-activity=.activities.StartActivity, webdriver.remote.quietExceptions=true, warnings={}, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:453)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
-	at UI.UI.Tap(UI.java:63)
-	at UI.UI.WaitAndTap(UI.java:94)
-	at Action.Navigate.ToNewWorkOrderView(Navigate.java:74)
-	at CRM_Mobile_Tests.SetWorkOrderToTest.SetWorkOrdersTest(SetWorkOrderToTest.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+<td title='CRM_Mobile_Tests.AddNewActivitiesAndCheckResults.AddActivitiesBySubMenu()'><b>AddActivitiesBySubMenu</b><br>Test class: CRM_Mobile_Tests.AddNewActivitiesAndCheckResults</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
@@ -221,38 +361,15 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browser
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2031741829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2031741829'><pre>org.openqa.selenium.UnsupportedCommandException: ERROR Job is not in progress
-Command duration or timeout: 93.19 seconds
-Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
-System info: host: &apos;rafal&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-Session ID: d8a20241d2814cec86a2c71b0133dfce
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browserName=Android, desired={platformVersion=4.2, deviceName=Android Emulator, platformName=Android, app-package=com.friendlysol.android, proxy={&quot;proxyAutoconfigUrl&quot;:&quot;http://127.0.0.1:19876/proxy.pac&quot;,&quot;proxyType&quot;:&quot;PAC&quot;}, app-activity=.activities.StartActivity, webdriver.remote.quietExceptions=true}, webdriver.remote.sessionid=d8a20241d2814cec86a2c71b0133dfce, platformVersion=4.2, databaseEnabled=false, platformName=Android, deviceName=Android Emulator, app-package=com.friendlysol.android, webStorageEnabled=false, proxy={&quot;proxyAutoconfigUrl&quot;:&quot;http://127.0.0.1:19876/proxy.pac&quot;,&quot;proxyType&quot;:&quot;PAC&quot;}, app-activity=.activities.StartActivity, webdriver.remote.quietExceptions=true, warnings={}, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:453)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:340)
-	at UI.UI.Tap(UI.java:63)
-	at UI.UI.WaitAndTap(UI.java:94)
-	at Action.Navigate.ToNewWorkOrderView(Navigate.java:74)
-	at CRM_Mobile_Tests.SetWorkOrderToTest.SetWorkOrdersTest(SetWorkOrderToTest.java:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1005354245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1005354245'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
@@ -268,12 +385,739 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, hasMetadata=true, browser
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
 </pre></div></td>
-<td>104</td>
-<td>CRM_Mobile_Tests.SetWorkOrderToTest@3d7b218b</td></tr>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddNewActivitiesAndCheckResults.AddActivitiesInActivitisView()'><b>AddActivitiesInActivitisView</b><br>Test class: CRM_Mobile_Tests.AddNewActivitiesAndCheckResults</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace458207239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace458207239'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddReceiptsToWorkOrder.AddPurchaseOrdersToReceipts()'><b>AddPurchaseOrdersToReceipts</b><br>Test class: CRM_Mobile_Tests.AddReceiptsToWorkOrder</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1322918971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1322918971'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddReceiptsToWorkOrder@32f39ae5</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.SchouldCheckStatusAllButtonsInPage()'><b>SchouldCheckStatusAllButtonsInPage</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1458050895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1458050895'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayMainMenu.SchouldScrollDownAndDisplayMenuItem()'><b>SchouldScrollDownAndDisplayMenuItem</b><br>Test class: CRM_Mobile_Tests.DisplayMainMenu</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1393969723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1393969723'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayMainMenu@173e4a85</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.SetWorkOrderToTest.SetWorkOrdersTest()'><b>SetWorkOrdersTest</b><br>Test class: CRM_Mobile_Tests.SetWorkOrderToTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace737630832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737630832'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.SetWorkOrderToTest@7a8e6dae</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderList.ShouldDisplayAllItemInSubMenu()'><b>ShouldDisplayAllItemInSubMenu</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderList</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace166199244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace166199244'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ShouldDisplayAllItemInSubMenu()'><b>ShouldDisplayAllItemInSubMenu</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1564364372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1564364372'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderList.ShouldDisplayAnyElmentInList()'><b>ShouldDisplayAnyElmentInList</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderList</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2033294196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2033294196'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayInformationPage.ShouldDisplayInformationPanel()'><b>ShouldDisplayInformationPanel</b><br>Test class: CRM_Mobile_Tests.DisplayInformationPage</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1074505481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1074505481'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayInformationPage@3c1d635a</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayMainMenu.ShouldDisplayMainMenu()'><b>ShouldDisplayMainMenu</b><br>Test class: CRM_Mobile_Tests.DisplayMainMenu</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace218962009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace218962009'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayMainMenu@173e4a85</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ShouldDisplayProperWoDetalis()'><b>ShouldDisplayProperWoDetalis</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace736271865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace736271865'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.DisplayMainMenu.ShouldDisplaySubMenu()'><b>ShouldDisplaySubMenu</b><br>Test class: CRM_Mobile_Tests.DisplayMainMenu</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace754290875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace754290875'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.DisplayMainMenu@173e4a85</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.ExtendWorkOrderDate.ShouldExtendWorkOrder()'><b>ShouldExtendWorkOrder</b><br>Test class: CRM_Mobile_Tests.ExtendWorkOrderDate</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace474767460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace474767460'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7</td></tr>
+<tr>
+<td title='CRM_Mobile_Tests.AddPhotoToWorkOrder.Test()'><b>Test</b><br>Test class: CRM_Mobile_Tests.AddPhotoToWorkOrder</td>
+<td><div><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1771316117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1771316117'><pre>java.lang.NullPointerException
+	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
+	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752</td></tr>
 </table><p>
 </body>
 </html>

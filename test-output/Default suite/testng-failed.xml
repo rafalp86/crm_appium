@@ -3,14 +3,58 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+      <class name="CRM_Mobile_Tests.AddNewActivitiesAndCheckResults">
+        <methods>
+          <include name="AddActivitiesInActivitisView"/>
+          <include name="AddActivitiesBySubMenu"/>
+        </methods>
+      </class> <!-- CRM_Mobile_Tests.AddNewActivitiesAndCheckResults -->
+      <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder">
+        <methods>
+          <include name="Test"/>
+        </methods>
+      </class> <!-- CRM_Mobile_Tests.AddPhotoToWorkOrder -->
+      <class name="CRM_Mobile_Tests.AddReceiptsToWorkOrder">
+        <methods>
+          <include name="AddPurchaseOrdersToReceipts"/>
+        </methods>
+      </class> <!-- CRM_Mobile_Tests.AddReceiptsToWorkOrder -->
+      <class name="CRM_Mobile_Tests.DisplayMainMenu">
+        <methods>
+          <include name="ShouldDisplayMainMenu"/>
+          <include name="SchouldScrollDownAndDisplayMenuItem"/>
+          <include name="ShouldDisplaySubMenu"/>
+        </methods>
+      </class> <!-- CRM_Mobile_Tests.DisplayMainMenu -->
       <class name="CRM_Mobile_Tests.SetWorkOrderToTest">
         <methods>
-          <include name="tearDown"/>
           <include name="SetWorkOrdersTest"/>
-          <include name="ScreenshotWhenFail"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- CRM_Mobile_Tests.SetWorkOrderToTest -->
+      <class name="CRM_Mobile_Tests.DisplayWorkOrderDetails">
+        <methods>
+          <include name="ShouldDisplayAllItemInSubMenu"/>
+          <include name="SchouldCheckStatusAllButtonsInPage"/>
+          <include name="ShouldDisplayProperWoDetalis"/>
+        </methods>
+      </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderDetails -->
+      <class name="CRM_Mobile_Tests.ExtendWorkOrderDate">
+        <methods>
+          <include name="ShouldExtendWorkOrder"/>
+        </methods>
+      </class> <!-- CRM_Mobile_Tests.ExtendWorkOrderDate -->
+      <class name="CRM_Mobile_Tests.DisplayWorkOrderList">
+        <methods>
+          <include name="ShouldDisplayAllItemInSubMenu"/>
+          <include name="ShouldDisplayAnyElmentInList"/>
+        </methods>
+      </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderList -->
+      <class name="CRM_Mobile_Tests.DisplayInformationPage">
+        <methods>
+          <include name="ShouldDisplayInformationPanel"/>
+        </methods>
+      </class> <!-- CRM_Mobile_Tests.DisplayInformationPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

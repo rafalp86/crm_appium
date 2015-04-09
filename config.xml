@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <!-- App Data -->
+<entry key="RunLocal">True</entry>
+<entry key="RunSelendroid">False</entry>
+<entry key="SlideCount">5</entry>
+ <!-- Test Data -->
+<entry key="Email">appiumtest@wp.pl</entry>
+<entry key="Password">password</entry>
+<entry key="NewUserName">TestSelenium</entry>
+
+<!-- sauce labs -->
+<entry key="Username">friendlysol</entry>
+<entry key="AccessKey">aa94af2b-1539-42c3-b804-590efaf1b51c</entry>
+<entry key="StorageApk">theshare.zip</entry>
+</properties>

@@ -27,7 +27,7 @@ import com.saucelabs.testng.SauceOnDemandTestListener;
 @Listeners({SauceOnDemandTestListener.class})
 public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider {
 
-	private static boolean RunLocal=false;
+	public static Config appConfig = new Config();
 	
 	protected  SauceOnDemandAuthentication authentication;
 	
@@ -42,7 +42,7 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
 		driver= null;
 		try
 		{
-			driver= RunLocal?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test")):
+			driver= appConfig.getBool("RunLocal")?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test")):
 				new RemoteWebDriver(new URL("http://friendlysol:aa94af2b-1539-42c3-b804-590efaf1b51c@ondemand.saucelabs.com:80/wd/hub"), Configuration(TestName));
 			
 			//driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -84,11 +84,11 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
     private   DesiredCapabilities Configuration(String testName)
       {		  
    	   DesiredCapabilities capabilities = new DesiredCapabilities();
-   	   if(RunLocal)
+   	   if(appConfig.getBool("RunLocal"))
    	   {
-	   	   File appDir = new File("C:\\Appium\\APK");
-	       File app = new File(appDir, "mobile.apk");  
-	   	   capabilities.setCapability("app",app);
+	   	  // File appDir = new File("C:\\Appium\\APK");
+	     //  File app = new File(appDir, "mobile.apk");  
+	   	  // capabilities.setCapability("app",app);
    	   }
    	   else
    	   {

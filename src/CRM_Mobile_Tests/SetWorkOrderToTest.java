@@ -35,8 +35,10 @@ public class SetWorkOrderToTest extends CRM_Base {
 		 
 		 NewWorkOrderPage=Navigate.ToNewWorkOrderView();
 		 NewWorkOrderPage.SetDescribe("Appium test").SelectPeople().SetPriority();//Add save
-		// NewWorkOrderPage.SetDescribe("Receipts test").SelectPeople().SetPriority();//Add save
-		// NewWorkOrderPage.SetDescribe("Appium test, start /stop time ").SelectPeople().SetPriority();//Add save
+		 NewWorkOrderPage=Navigate.ToNewWorkOrderView();
+		 NewWorkOrderPage.SetDescribe("Receipts test").SelectPeople().SetPriority();//Add save
+		 NewWorkOrderPage=Navigate.ToNewWorkOrderView();
+		 NewWorkOrderPage.SetDescribe("Appium test, start /stop time ").SelectPeople().SetPriority();//Add save
 	
 		 
 		 
