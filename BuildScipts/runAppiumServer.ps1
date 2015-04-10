@@ -4,8 +4,8 @@ $apkFile='..\resources\mobile.apk'
 $EmulatorName='crm'
 $resetEmulator=$false
 
-if($args[0] -ne $null) { $EmulatorName=$args[0]  }
-if($args[1] -ne $null) { $apkFile=$args[1]  }
+if($args[0] -ne $null) { $EmulatorName=$args[0] ; $EmulatorName }
+if($args[1] -ne $null) { $apkFile=$args[1] ; $apkFile}
 
 
 $appiumProcess='node'
