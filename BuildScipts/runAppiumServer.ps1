@@ -4,6 +4,10 @@ $apkFile='..\resources\mobile.apk'
 $EmulatorName='crm'
 $resetEmulator=$false
 
+if($args[0] -ne $null) { $EmulatorName=$args[0]  }
+if($args[1] -ne $null) { $apkFile=$args[1]  }
+
+
 $appiumProcess='node'
 $SeleniumProcess='java'
 $emulatorProcess='emulator'
@@ -28,7 +32,7 @@ if($SeleniumProcessCount -eq 0)
 "Run selenium server"
 $serwerPATH=$Env:SELENIUM+"\selenium-server-standalone-2.45.0.jar"
 $serwerPATH
-     Start-Process -FilePath java  -ArgumentList ("-jar "+$serwerPATH+"")
+   #  Start-Process -FilePath java  -ArgumentList ("-jar "+$serwerPATH+"")
 }
 
 if($resetEmulator)
