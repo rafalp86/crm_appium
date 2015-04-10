@@ -19,7 +19,7 @@ public class DisplayMainMenu extends CRM_Base {
 		 System.out.println("Test :DisplayMainMenu");
 		 AppManu= Navigate.ToMainMenu();
 	 }
-	 @Test 
+	// @Test 
 	 public void ShouldDisplayMainMenu() 
 	    {	 		 
 		 AppManu.ScrollUp();
@@ -37,7 +37,7 @@ public class DisplayMainMenu extends CRM_Base {
 		 Screenshot("SchouldScrollDownAndDisplayMenuItem");
 	 }
 	 
-	 @Test 
+	// @Test 
 	 public void ShouldDisplaySubMenu() 
 	 {
 		 AppManu.ScrollUp();

@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.CapabilityType;
@@ -24,12 +25,11 @@ import com.saucelabs.common.SauceOnDemandSessionIdProvider;
 import com.saucelabs.testng.SauceOnDemandAuthenticationProvider;
 import com.saucelabs.testng.SauceOnDemandTestListener;
 
-@Listeners({SauceOnDemandTestListener.class})
-public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider {
+
+public class CRM_Base{
 
 	public static Config appConfig = new Config();
 	
-	protected  SauceOnDemandAuthentication authentication;
 	
 	protected static WebDriver driver;
 	protected  WebDriver ConnectionWithApplication() 
@@ -38,7 +38,7 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
 	//@BeforeSuite
 	protected  WebDriver ConnectionWithApplication(String TestName) 
 	{   
-		authentication = new SauceOnDemandAuthentication("friendlysol","aa94af2b-1539-42c3-b804-590efaf1b51c");
+		
 		driver= null;
 		try
 		{
@@ -53,6 +53,8 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
 		}
 		System.out.println("Connect  with application");
 		System.out.println("Test :"+TestName);
+		   
+		WaitForApplication();
 		return driver;
 	}
 	
@@ -66,8 +68,10 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
 	
 	protected  void Screenshot(String fileName) {
         try {
-        
-            FileOutputStream out = new FileOutputStream(fileName + "_CRM.png");
+        	File ScreenDir=new File("Screenshots");
+        	if (!ScreenDir.exists()) ScreenDir.mkdir();
+        		
+            FileOutputStream out = new FileOutputStream(".\\Screenshots\\"+fileName + "_CRM.png");
             out.write(((org.openqa.selenium.TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES));
             out.close();
         } catch (Exception e) {
@@ -100,7 +104,7 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
        capabilities.setCapability("platformName","Android");       
        //capabilities.setCapability("deviceName","LGOTMS1ab80a");     
        capabilities.setCapability("deviceName","Android Emulator");
-       capabilities.setCapability("platformVersion", "4.2");
+       capabilities.setCapability("platformVersion", "4.4");
        capabilities.setCapability("deviceType", "phone");
        
       // capabilities.setCapability("automationName", "appium");
@@ -113,15 +117,19 @@ public class CRM_Base  implements SauceOnDemandSessionIdProvider, SauceOnDemandA
       }
 
 
-    @Override
-    public SauceOnDemandAuthentication getAuthentication() {
-        return authentication;
+    private void WaitForApplication()
+    {
+    	int timeout=0;
+    	do
+    	{
+	    	try
+	    	{
+	    		if (!UI.Finds(By.xpath("//*")).isEmpty())
+	    			return ;
+	    		
+	    	}
+	    	catch (Exception ex){}
+	    	timeout++;
+    	} while (timeout <60);
     }
-
-    @Override
-    public String getSessionId() {
-        SessionId sessionId = ((RemoteWebDriver)driver).getSessionId();
-        return (sessionId == null) ? null : sessionId.toString();
-    }
-
 }

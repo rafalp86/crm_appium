@@ -8,6 +8,7 @@ import javax.swing.text.StyledEditorKit.BoldAction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,12 +22,12 @@ public class UI extends CRM_Base {
 	//dodaæ timeout
 	protected static boolean ElementExist(By element,int timeout)
 	{
-		System.out.println("Wait for " +element);
+		System.out.println("Wait for " +element + " : "+timeout +"s");
 		try
 		{
 			return WaitForElement(element,timeout);
 		}
-		catch (Exception ex) {
+		catch (WebDriverException ex) {
 			System.out.println("Elemet NOT exist :  " +element);
 			return false;}
 	}
@@ -101,12 +102,11 @@ public class UI extends CRM_Base {
 		return true;
 	  }
 	  
-	protected static boolean WaitForElement(By element,int timeout)
+	protected static boolean WaitForElement(By element,int timeout) 
 	  {		
-		WebDriverWait  wait = new WebDriverWait(driver,new Long(timeout));
-		wait.until(ExpectedConditions.presenceOfElementLocated(element));
-		
-		return true;
+			WebDriverWait  wait = new WebDriverWait(driver,new Long(timeout));
+			wait.until(ExpectedConditions.presenceOfElementLocated(element));
+			return true;
 	  }
 	
 	 public void WaitForDisappear(final By element)
@@ -162,5 +162,4 @@ public class UI extends CRM_Base {
 	public static void SetText(WebElement element, String message) {
 		element.clear(); element.sendKeys(message);
 	}
-	
 }

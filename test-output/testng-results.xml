@@ -1,294 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="15" total="15" passed="0">
+<testng-results skipped="3" failed="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="254142" started-at="2015-04-09T17:34:12Z" finished-at="2015-04-09T17:38:26Z">
+  <suite name="Default suite" duration-ms="132170" started-at="2015-04-10T13:06:53Z" finished-at="2015-04-10T13:09:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="254142" started-at="2015-04-09T17:34:12Z" finished-at="2015-04-09T17:38:26Z">
-      <class name="CRM_Mobile_Tests.DisplayMainMenu">
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:CRM_Mobile_Tests.DisplayMainMenu@173e4a85]" name="setUp" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="SchouldScrollDownAndDisplayMenuItem()[pri:0, instance:CRM_Mobile_Tests.DisplayMainMenu@173e4a85]" name="SchouldScrollDownAndDisplayMenuItem" duration-ms="1" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SchouldScrollDownAndDisplayMenuItem -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayMainMenu@173e4a85]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="ShouldDisplayMainMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayMainMenu@173e4a85]" name="ShouldDisplayMainMenu" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldDisplayMainMenu -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayMainMenu@173e4a85]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayMainMenu@173e4a85]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="ShouldDisplaySubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayMainMenu@173e4a85]" name="ShouldDisplaySubMenu" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldDisplaySubMenu -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.DisplayMainMenu@173e4a85]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- CRM_Mobile_Tests.DisplayMainMenu -->
-      <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder">
-        <test-method status="SKIP" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752]" name="setUpSuite" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpSuite -->
-        <test-method status="SKIP" signature="MetodSetUp()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752]" name="MetodSetUp" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MetodSetUp -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="Test()[pri:0, instance:CRM_Mobile_Tests.AddPhotoToWorkOrder@53443752]" name="Test" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test -->
-      </class> <!-- CRM_Mobile_Tests.AddPhotoToWorkOrder -->
-      <class name="CRM_Mobile_Tests.AddReceiptsToWorkOrder">
-        <test-method status="SKIP" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@32f39ae5]" name="setUpSuite" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpSuite -->
-        <test-method status="FAIL" signature="AddPurchaseOrdersToReceipts()[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@32f39ae5]" name="AddPurchaseOrdersToReceipts" duration-ms="1" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddPurchaseOrdersToReceipts -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@32f39ae5]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.AddReceiptsToWorkOrder@32f39ae5]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-      </class> <!-- CRM_Mobile_Tests.AddReceiptsToWorkOrder -->
-      <class name="CRM_Mobile_Tests.ExtendWorkOrderDate">
-        <test-method status="SKIP" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7]" name="setUpSuite" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpSuite -->
-        <test-method status="SKIP" signature="MetodSetUp()[pri:0, instance:CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7]" name="MetodSetUp" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MetodSetUp -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="ShouldExtendWorkOrder()[pri:0, instance:CRM_Mobile_Tests.ExtendWorkOrderDate@2528ed7]" name="ShouldExtendWorkOrder" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldExtendWorkOrder -->
-      </class> <!-- CRM_Mobile_Tests.ExtendWorkOrderDate -->
-      <class name="CRM_Mobile_Tests.SetWorkOrderToTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:CRM_Mobile_Tests.SetWorkOrderToTest@7a8e6dae]" name="setUp" is-config="true" duration-ms="0" started-at="2015-04-09T19:34:12Z" finished-at="2015-04-09T19:34:12Z">
-          <exception class="java.lang.AssertionError">
+    <test name="Default test" duration-ms="132170" started-at="2015-04-10T13:06:53Z" finished-at="2015-04-10T13:09:05Z">
+      <class name="CRM_Mobile_Tests.DisplayWorkOrderDetails">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30]" name="setUp" is-config="true" duration-ms="0" started-at="2015-04-10T15:06:53Z" finished-at="2015-04-10T15:06:53Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Problem with create Webdrive instantion: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find crm emulator.) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 252.29 seconds
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+              <![CDATA[An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 252 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'rafal', ip: '192.168.222.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='2500 Holding Group LLC  (3)']}
+Session ID: b4a4baa9-bcb3-4dd5-b6a7-89c61f94fdb3
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=LINUX, javascriptEnabled=true, browserName=Android, networkConnectionEnabled=true, desired={platformVersion=4.4, platformName=Android, deviceName=Android Emulator, deviceType=phone, app-package=com.friendlysol.android, name=Test, app-activity=.activities.StartActivity}, locationContextEnabled=false, platformVersion=4.4, databaseEnabled=false, platformName=Android, deviceName=Android Emulator, deviceType=phone, app-package=com.friendlysol.android, name=Test, webStorageEnabled=false, app-activity=.activities.StartActivity, warnings={}, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find crm emulator.) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 252.29 seconds
-Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 252 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
 System info: host: 'rafal', ip: '192.168.222.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='2500 Holding Group LLC  (3)']}
+Session ID: b4a4baa9-bcb3-4dd5-b6a7-89c61f94fdb3
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-	at org.testng.Assert.fail(Assert.java:94)
-	at UI.CRM_Base.ConnectionWithApplication(CRM_Base.java:52)
-	at CRM_Mobile_Tests.SetWorkOrderToTest.setUp(SetWorkOrderToTest.java:23)
+Capabilities [{platform=LINUX, javascriptEnabled=true, browserName=Android, networkConnectionEnabled=true, desired={platformVersion=4.4, platformName=Android, deviceName=Android Emulator, deviceType=phone, app-package=com.friendlysol.android, name=Test, app-activity=.activities.StartActivity}, locationContextEnabled=false, platformVersion=4.4, databaseEnabled=false, platformName=Android, deviceName=Android Emulator, deviceType=phone, app-package=com.friendlysol.android, name=Test, webStorageEnabled=false, app-activity=.activities.StartActivity, warnings={}, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at UI.UI.WaitForElement(UI.java:108)
+	at UI.UI.WaitAndTap(UI.java:94)
+	at Page.WorkOrder.WorkOrderListViewSubMenu.Customers(WorkOrderListViewSubMenu.java:43)
+	at CRM_Mobile_Tests.DisplayWorkOrderDetails.setUp(DisplayWorkOrderDetails.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -314,383 +72,35 @@ Driver info: org.openqa.selenium.remote.RemoteWebDriver
 	at org.testng.TestNG.main(TestNG.java:1333)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="SetWorkOrdersTest()[pri:0, instance:CRM_Mobile_Tests.SetWorkOrderToTest@7a8e6dae]" name="SetWorkOrdersTest" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetWorkOrdersTest -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.SetWorkOrderToTest@7a8e6dae]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.SetWorkOrderToTest@7a8e6dae]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- CRM_Mobile_Tests.SetWorkOrderToTest -->
-      <class name="CRM_Mobile_Tests.AddNewActivitiesAndCheckResults">
-        <test-method status="SKIP" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430]" name="setUpSuite" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpSuite -->
-        <test-method status="SKIP" signature="MetodSetUp()[pri:0, instance:CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430]" name="MetodSetUp" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MetodSetUp -->
-        <test-method status="FAIL" signature="AddActivitiesBySubMenu()[pri:0, instance:CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430]" name="AddActivitiesBySubMenu" duration-ms="1" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddActivitiesBySubMenu -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="MetodSetUp()[pri:0, instance:CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430]" name="MetodSetUp" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MetodSetUp -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="AddActivitiesInActivitisView()[pri:0, instance:CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430]" name="AddActivitiesInActivitisView" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddActivitiesInActivitisView -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.AddNewActivitiesAndCheckResults@3c5cc430]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-      </class> <!-- CRM_Mobile_Tests.AddNewActivitiesAndCheckResults -->
-      <class name="CRM_Mobile_Tests.DisplayWorkOrderList">
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671]" name="setUp" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="ShouldDisplayAllItemInSubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671]" name="ShouldDisplayAllItemInSubMenu" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldDisplayAllItemInSubMenu -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="ShouldDisplayAnyElmentInList()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671]" name="ShouldDisplayAnyElmentInList" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldDisplayAnyElmentInList -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderList@7a1fc671]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderList -->
-      <class name="CRM_Mobile_Tests.DisplayInformationPage">
-        <test-method status="SKIP" signature="setUpSuite()[pri:0, instance:CRM_Mobile_Tests.DisplayInformationPage@3c1d635a]" name="setUpSuite" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpSuite -->
-        <test-method status="FAIL" signature="ShouldDisplayInformationPanel()[pri:0, instance:CRM_Mobile_Tests.DisplayInformationPage@3c1d635a]" name="ShouldDisplayInformationPanel" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ShouldDisplayInformationPanel -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayInformationPage@3c1d635a]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="tearDownSuite()[pri:0, instance:CRM_Mobile_Tests.DisplayInformationPage@3c1d635a]" name="tearDownSuite" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownSuite -->
-      </class> <!-- CRM_Mobile_Tests.DisplayInformationPage -->
-      <class name="CRM_Mobile_Tests.DisplayWorkOrderDetails">
-        <test-method status="SKIP" signature="setUp()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e]" name="setUp" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="SchouldCheckStatusAllButtonsInPage()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e]" name="SchouldCheckStatusAllButtonsInPage" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="SKIP" signature="SchouldCheckStatusAllButtonsInPage()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30]" name="SchouldCheckStatusAllButtonsInPage" duration-ms="1" started-at="2015-04-10T15:09:05Z" finished-at="2015-04-10T15:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SchouldCheckStatusAllButtonsInPage -->
-        <test-method status="FAIL" signature="ShouldDisplayAllItemInSubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e]" name="ShouldDisplayAllItemInSubMenu" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-10T15:09:05Z" finished-at="2015-04-10T15:09:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="SKIP" signature="ShouldDisplayAllItemInSubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30]" name="ShouldDisplayAllItemInSubMenu" duration-ms="1" started-at="2015-04-10T15:09:05Z" finished-at="2015-04-10T15:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldDisplayAllItemInSubMenu -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-10T15:09:05Z" finished-at="2015-04-10T15:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="FAIL" signature="ShouldDisplayProperWoDetalis()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e]" name="ShouldDisplayProperWoDetalis" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at UI.CRM_Base.getSessionId(CRM_Base.java:123)
-	at com.saucelabs.testng.SauceOnDemandTestListener.onTestStart(SauceOnDemandTestListener.java:93)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1904)
-	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1879)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:685)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="SKIP" signature="ShouldDisplayProperWoDetalis()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30]" name="ShouldDisplayProperWoDetalis" duration-ms="1" started-at="2015-04-10T15:09:05Z" finished-at="2015-04-10T15:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldDisplayProperWoDetalis -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
+        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-10T15:09:05Z" finished-at="2015-04-10T15:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@1cc2f95e]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-09T19:38:26Z" finished-at="2015-04-09T19:38:26Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-10T15:09:05Z" finished-at="2015-04-10T15:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

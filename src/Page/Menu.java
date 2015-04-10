@@ -59,7 +59,7 @@ public class Menu extends UI {
  
  public void ScrollDown()
  {
-	Gestures.Scroll(1., 300., 1., 1.);
+	Gestures.ScrollToEnd();
  }
  
  public void ScrollUp()

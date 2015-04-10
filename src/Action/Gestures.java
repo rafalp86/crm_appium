@@ -42,7 +42,7 @@ public class Gestures extends UI {
 	
 	public static void ScrollToEnd()
 	{
-		String lastText="";
+		/*String lastText="";
 		String currentText="";
 		while(!lastText.equalsIgnoreCase(FindLast(GetBy.className(Class.TextView)).getText()))
 			{
@@ -50,6 +50,16 @@ public class Gestures extends UI {
 			System.out.println("C :"+currentText+" L:"+lastText);
 			lastText=currentText;
 			Scroll(1.,720, 1., 1.);		
+			}*/
+		String lastText="";
+		String currentText="";
+		org.openqa.selenium.Dimension FrameSize =driver.manage().window().getSize();
+		while(!lastText.equalsIgnoreCase(FindLast(GetBy.className(Class.TextView)).getText()))
+			{
+			currentText=FindLast(GetBy.className(Class.TextView)).getText();
+			System.out.println("C :"+currentText+" L:"+lastText);
+			lastText=currentText;
+			Scroll((double)FrameSize.width/2,(double)FrameSize.height-20, (double)FrameSize.width/2, 5.);;		
 			}
 	}
 		
