@@ -91,7 +91,7 @@ public class UI extends CRM_Base {
 	
 	protected static void WaitAndTap(By element)
 	  {	
-		WaitForElement(element, 5);
+		WaitForElement(element, 8);
 		Tap(element);
 	 }
 	 

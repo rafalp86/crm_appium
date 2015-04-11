@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 10 15:06:53 CEST 2015</td>
+<td>Started on:</td><td>Sat Apr 11 17:13:42 CEST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>132 seconds (132170 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1384 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.setUp()'><b>setUp</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 252 milliseconds
+<td><div><pre>java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 452 milliseconds
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
 System info: host: &apos;rafal&apos;, ip: &apos;192.168.222.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;2500 Holding Group LLC  (3)&apos;]}
-Session ID: b4a4baa9-bcb3-4dd5-b6a7-89c61f94fdb3
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=LINUX, javascriptEnabled=true, browserName=Android, networkConnectionEnabled=true, desired={platformVersion=4.4, platformName=Android, deviceName=Android Emulator, deviceType=phone, app-package=com.friendlysol.android, name=Test, app-activity=.activities.StartActivity}, locationContextEnabled=false, platformVersion=4.4, databaseEnabled=false, platformName=Android, deviceName=Android Emulator, deviceType=phone, app-package=com.friendlysol.android, name=Test, webStorageEnabled=false, app-activity=.activities.StartActivity, warnings={}, takesScreenshot=true}]
-	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
-	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
-	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at UI.UI.WaitForElement(UI.java:108)
-	at UI.UI.WaitAndTap(UI.java:94)
-	at Page.WorkOrder.WorkOrderListViewSubMenu.Customers(WorkOrderListViewSubMenu.java:43)
-	at CRM_Mobile_Tests.DisplayWorkOrderDetails.setUp(DisplayWorkOrderDetails.java:34)
+	at org.testng.Assert.fail(Assert.java:94)
+	at UI.CRM_Base.ConnectionWithApplication(CRM_Base.java:52)
+	at CRM_Mobile_Tests.DisplayWorkOrderDetails.setUp(DisplayWorkOrderDetails.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -126,34 +107,15 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, browserName=Android, netw
 	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.TestNG.privateMain(TestNG.java:1364)
 	at org.testng.TestNG.main(TestNG.java:1333)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2135697900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2135697900'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 252 milliseconds
+</pre></div><a href='#' onClick='toggleBox("stack-trace445480968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445480968'><pre>java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 452 milliseconds
 Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-26 23:59:50&apos;
 System info: host: &apos;rafal&apos;, ip: &apos;192.168.222.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_71&apos;
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;2500 Holding Group LLC  (3)&apos;]}
-Session ID: b4a4baa9-bcb3-4dd5-b6a7-89c61f94fdb3
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=LINUX, javascriptEnabled=true, browserName=Android, networkConnectionEnabled=true, desired={platformVersion=4.4, platformName=Android, deviceName=Android Emulator, deviceType=phone, app-package=com.friendlysol.android, name=Test, app-activity=.activities.StartActivity}, locationContextEnabled=false, platformVersion=4.4, databaseEnabled=false, platformName=Android, deviceName=Android Emulator, deviceType=phone, app-package=com.friendlysol.android, name=Test, webStorageEnabled=false, app-activity=.activities.StartActivity, warnings={}, takesScreenshot=true}]
-	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
-	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
-	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at UI.UI.WaitForElement(UI.java:108)
-	at UI.UI.WaitAndTap(UI.java:94)
-	at Page.WorkOrder.WorkOrderListViewSubMenu.Customers(WorkOrderListViewSubMenu.java:43)
-	at CRM_Mobile_Tests.DisplayWorkOrderDetails.setUp(DisplayWorkOrderDetails.java:34)
+	at org.testng.Assert.fail(Assert.java:94)
+	at UI.CRM_Base.ConnectionWithApplication(CRM_Base.java:52)
+	at CRM_Mobile_Tests.DisplayWorkOrderDetails.setUp(DisplayWorkOrderDetails.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -179,7 +141,7 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, browserName=Android, netw
 	at org.testng.TestNG.main(TestNG.java:1333)
 </pre></div></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30</td></tr>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -192,22 +154,22 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, browserName=Android, netw
 <td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
 <td></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30</td></tr>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5</td></tr>
 <tr>
 <td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
 <td></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30</td></tr>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5</td></tr>
 <tr>
 <td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ScreenshotWhenFail()'><b>ScreenshotWhenFail</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
 <td></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30</td></tr>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5</td></tr>
 <tr>
 <td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.tearDown()'><b>tearDown</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
 <td></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30</td></tr>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -220,17 +182,17 @@ Capabilities [{platform=LINUX, javascriptEnabled=true, browserName=Android, netw
 <td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.SchouldCheckStatusAllButtonsInPage()'><b>SchouldCheckStatusAllButtonsInPage</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
 <td></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30</td></tr>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5</td></tr>
 <tr>
 <td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ShouldDisplayAllItemInSubMenu()'><b>ShouldDisplayAllItemInSubMenu</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
 <td></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30</td></tr>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5</td></tr>
 <tr>
 <td title='CRM_Mobile_Tests.DisplayWorkOrderDetails.ShouldDisplayProperWoDetalis()'><b>ShouldDisplayProperWoDetalis</b><br>Test class: CRM_Mobile_Tests.DisplayWorkOrderDetails</td>
 <td></td>
 <td>0</td>
-<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@721bdf30</td></tr>
+<td>CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5</td></tr>
 </table><p>
 </body>
 </html>

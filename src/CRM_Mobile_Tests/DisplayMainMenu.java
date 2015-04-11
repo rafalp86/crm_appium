@@ -37,7 +37,7 @@ public class DisplayMainMenu extends CRM_Base {
 		 Screenshot("SchouldScrollDownAndDisplayMenuItem");
 	 }
 	 
-	// @Test 
+	 //@Test 
 	 public void ShouldDisplaySubMenu() 
 	 {
 		 AppManu.ScrollUp();
