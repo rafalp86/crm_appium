@@ -50,7 +50,8 @@ $selPATH=($Env:SELENIUM+"\selenium-server-standalone-2.45.0.jar")
 "Selenium Dir :"+$selPATH
    Start-Process -FilePath java  -ArgumentList ("-jar "+$selPATH+"")
    #>
-   sleep(5)
+   sleep(20)
+  "Appium proces started: "+ (Get-Process | Where {$_.ProcessName -eq $appiumProcess} |measure).Count
 
 if($resetEmulator)
 {
