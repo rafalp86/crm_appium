@@ -5,10 +5,10 @@
     <classes>
       <class name="CRM_Mobile_Tests.DisplayWorkOrderDetails">
         <methods>
-          <include name="ShouldDisplayAllItemInSubMenu"/>
+          <include name="tearDown"/>
+          <include name="ScreenshotWhenFail"/>
           <include name="SchouldCheckStatusAllButtonsInPage"/>
           <include name="setUp"/>
-          <include name="ShouldDisplayProperWoDetalis"/>
         </methods>
       </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderDetails -->
     </classes>

@@ -124,12 +124,12 @@ public class CRM_Base{
     	{
 	    	try
 	    	{
+	    		Thread.sleep(5000);    
 	    		if (!UI.Finds(By.xpath("//*")).isEmpty())
-	    			return ;
-	    		
+	    			return ;    		
 	    	}
 	    	catch (Exception ex){}
-	    	timeout++;
-    	} while (timeout <60);
+	    	timeout++;	    	
+    	} while (timeout <10);
     }
 }

@@ -35,8 +35,8 @@ public class Gestures extends UI {
 		for(int i=0;i<15;i++)
 		{
 			if (ElementExist(element, 0)) break;
-			System.out.println("Scroll: h="+((double)FrameSize.height-20)+"w="+(double)FrameSize.width/2);
-			Scroll((double)FrameSize.width/2,(double)FrameSize.height-20, (double)FrameSize.width/2, 5.);
+			System.out.println("Scroll: h="+((double)FrameSize.height-50)+"w="+(double)FrameSize.width/2);
+			Scroll((double)FrameSize.width/2,(double)FrameSize.height-50, (double)FrameSize.width/2, 5.);
 		}
 	}
 	
@@ -59,7 +59,7 @@ public class Gestures extends UI {
 			currentText=FindLast(GetBy.className(Class.TextView)).getText();
 			System.out.println("C :"+currentText+" L:"+lastText);
 			lastText=currentText;
-			Scroll((double)FrameSize.width/2,(double)FrameSize.height-20, (double)FrameSize.width/2, 5.);;		
+			Scroll((double)FrameSize.width/2,(double)FrameSize.height-50, (double)FrameSize.width/2, 5.);;		
 			}
 	}
 		

@@ -1,87 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1384" started-at="2015-04-11T15:13:42Z" finished-at="2015-04-11T15:13:43Z">
+  <suite name="Default suite" duration-ms="47617" started-at="2015-04-12T17:35:23Z" finished-at="2015-04-12T17:36:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1384" started-at="2015-04-11T15:13:42Z" finished-at="2015-04-11T15:13:43Z">
+    <test name="Default test" duration-ms="47617" started-at="2015-04-12T17:35:23Z" finished-at="2015-04-12T17:36:10Z">
       <class name="CRM_Mobile_Tests.DisplayWorkOrderDetails">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5]" name="setUp" is-config="true" duration-ms="0" started-at="2015-04-11T17:13:42Z" finished-at="2015-04-11T17:13:42Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Problem with create Webdrive instantion: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 452 milliseconds
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'rafal', ip: '192.168.222.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Problem with create Webdrive instantion: org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 452 milliseconds
-Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
-System info: host: 'rafal', ip: '192.168.222.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-	at org.testng.Assert.fail(Assert.java:94)
-	at UI.CRM_Base.ConnectionWithApplication(CRM_Base.java:52)
-	at CRM_Mobile_Tests.DisplayWorkOrderDetails.setUp(DisplayWorkOrderDetails.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7186fe17]" name="setUp" is-config="true" duration-ms="43035" started-at="2015-04-12T19:35:23Z" finished-at="2015-04-12T19:36:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="SchouldCheckStatusAllButtonsInPage()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5]" name="SchouldCheckStatusAllButtonsInPage" duration-ms="0" started-at="2015-04-11T17:13:43Z" finished-at="2015-04-11T17:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SchouldCheckStatusAllButtonsInPage -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-11T17:13:43Z" finished-at="2015-04-11T17:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="ShouldDisplayAllItemInSubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5]" name="ShouldDisplayAllItemInSubMenu" duration-ms="0" started-at="2015-04-11T17:13:43Z" finished-at="2015-04-11T17:13:43Z">
+        <test-method status="PASS" signature="ShouldDisplayAllItemInSubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7186fe17]" name="ShouldDisplayAllItemInSubMenu" duration-ms="3268" started-at="2015-04-12T19:36:06Z" finished-at="2015-04-12T19:36:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldDisplayAllItemInSubMenu -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-11T17:13:43Z" finished-at="2015-04-11T17:13:43Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7186fe17]" name="ScreenshotWhenFail" is-config="true" duration-ms="2" started-at="2015-04-12T19:36:09Z" finished-at="2015-04-12T19:36:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShouldDisplayAllItemInSubMenu status=SUCCESS method=DisplayWorkOrderDetails.ShouldDisplayAllItemInSubMenu()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7186fe17] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
-        <test-method status="SKIP" signature="ShouldDisplayProperWoDetalis()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5]" name="ShouldDisplayProperWoDetalis" duration-ms="0" started-at="2015-04-11T17:13:43Z" finished-at="2015-04-11T17:13:43Z">
+        <test-method status="PASS" signature="ShouldDisplayProperWoDetalis()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7186fe17]" name="ShouldDisplayProperWoDetalis" duration-ms="513" started-at="2015-04-12T19:36:09Z" finished-at="2015-04-12T19:36:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ShouldDisplayProperWoDetalis -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-04-11T17:13:43Z" finished-at="2015-04-11T17:13:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@62facfa5]" name="ScreenshotWhenFail" is-config="true" duration-ms="0" started-at="2015-04-11T17:13:43Z" finished-at="2015-04-11T17:13:43Z">
+        <test-method status="PASS" signature="ScreenshotWhenFail(org.testng.ITestResult)[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7186fe17]" name="ScreenshotWhenFail" is-config="true" duration-ms="1" started-at="2015-04-12T19:36:09Z" finished-at="2015-04-12T19:36:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShouldDisplayProperWoDetalis status=SUCCESS method=DisplayWorkOrderDetails.ShouldDisplayProperWoDetalis()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7186fe17] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenshotWhenFail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:CRM_Mobile_Tests.DisplayWorkOrderDetails@7186fe17]" name="tearDown" is-config="true" duration-ms="765" started-at="2015-04-12T19:36:09Z" finished-at="2015-04-12T19:36:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderDetails -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

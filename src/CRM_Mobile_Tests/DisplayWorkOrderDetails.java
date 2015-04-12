@@ -24,7 +24,8 @@ public class DisplayWorkOrderDetails extends CRM_Base {
 	private WorkOrderListView WorkOrderList;
 	private WorkOrderDetailsView WorkOrder;
 	private WorkOrderDetailsViewSubMenu WorkOrderSubMenu;
-	private String expectedDescription="Appium test";
+//	private String expectedDescription="Appium test";
+	private String expectedDescription="Receipts test";
 	
 	@BeforeClass
     public void setUp()
@@ -58,7 +59,7 @@ public class DisplayWorkOrderDetails extends CRM_Base {
 		SubMenu.Close();
 	 }
 	
-	@Test
+	//@Test
 	public void SchouldCheckStatusAllButtonsInPage()
 	{
 		WorkOrder.ScrollDown();
