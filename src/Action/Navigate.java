@@ -36,16 +36,13 @@ public class Navigate extends UI {
 	}
 	
 	public static Menu ToMainMenu(){
-		TapIfExist(GetBy.Text("Friendly Solutions"),1);
-		if (UI.ElementExist(ProccedDialogButton,2))
-		{
-			ToInformationPage().Procced();
-		}
-		return new Menu();
+		return ToInformationPage().Procced();
+
 	}
 	
     public static  InformationView ToInformationPage(){ 
     	TapIfExist(GetBy.Text("Friendly Solutions"),1);
+    	TapIfExist(GetBy.Text("ProccedDialogButton"),2);
     	while(!UI.ElementExist(ContinueButton, 2))
     	{
     		Back();

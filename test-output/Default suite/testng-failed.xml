@@ -3,44 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="CRM_Mobile_Tests.DisplayWorkOrderList">
-        <methods>
-          <include name="ShouldDisplayAllItemInSubMenu"/>
-          <include name="ShouldDisplayAnyElmentInList"/>
-        </methods>
-      </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderList -->
-      <class name="CRM_Mobile_Tests.AddNewActivitiesAndCheckResults">
-        <methods>
-          <include name="MetodSetUp"/>
-          <include name="setUpSuite"/>
-          <include name="tearDown"/>
-          <include name="ScreenshotWhenFail"/>
-        </methods>
-      </class> <!-- CRM_Mobile_Tests.AddNewActivitiesAndCheckResults -->
-      <class name="CRM_Mobile_Tests.DisplayInformationPage">
-        <methods>
-          <include name="ShouldDisplayInformationPanel"/>
-        </methods>
-      </class> <!-- CRM_Mobile_Tests.DisplayInformationPage -->
-      <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder">
-        <methods>
-          <include name="setUpSuite"/>
-          <include name="MetodSetUp"/>
-          <include name="Test"/>
-        </methods>
-      </class> <!-- CRM_Mobile_Tests.AddPhotoToWorkOrder -->
-      <class name="CRM_Mobile_Tests.DisplayWorkOrderDetails">
-        <methods>
-          <include name="tearDown"/>
-          <include name="ScreenshotWhenFail"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- CRM_Mobile_Tests.DisplayWorkOrderDetails -->
       <class name="CRM_Mobile_Tests.DisplayMainMenu">
         <methods>
           <include name="ShouldDisplayMainMenu"/>
           <include name="SchouldScrollDownAndDisplayMenuItem"/>
           <include name="ShouldDisplaySubMenu"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- CRM_Mobile_Tests.DisplayMainMenu -->
     </classes>
