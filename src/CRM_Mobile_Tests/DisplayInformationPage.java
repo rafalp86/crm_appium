@@ -14,7 +14,7 @@ import UI.CRM_Base;
 public class DisplayInformationPage extends CRM_Base {
 	
 	private  InformationView InformationSite;
-	 @BeforeClass
+	 @BeforeClass(alwaysRun=true)
 	    public void setUpSuite()
 	 {
 		ConnectionWithApplication("DisplayInformationPage");
@@ -25,7 +25,7 @@ public class DisplayInformationPage extends CRM_Base {
 	 @Test 
 	  public void ShouldDisplayInformationPanel() 
 	    {
-		 String ExpectedStatus="138";
+		 String ExpectedStatus="184";
 		 String ExpectedInformation="Version 109";
 
 		 Assert.assertTrue(InformationSite.GetStatusNote().contains(ExpectedStatus),"Unexpected :"+InformationSite.GetStatusNote());

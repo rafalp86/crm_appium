@@ -17,7 +17,7 @@ public class SetWorkOrderToTest extends CRM_Base {
 	private WorkOrderListViewSubMenu WorkOrderListSubMenu;
 	private NewWorkOrderView NewWorkOrderPage;
 	
-	 @BeforeClass
+	 @BeforeClass(alwaysRun=true)
 	    public void setUp()
 	 {
 		 ConnectionWithApplication("SetWorkOrderToTest");

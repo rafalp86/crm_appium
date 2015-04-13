@@ -33,7 +33,7 @@ public class ExtendWorkOrderDate extends CRM_Base {
 	private Calendar cal = Calendar.getInstance();
 	private Random RandInt= new Random();
 	
-	 @BeforeClass
+	 @BeforeClass(alwaysRun=true)
 	    public void setUpSuite()
 	 {
 		ConnectionWithApplication("ExtendWorkOrderDate");

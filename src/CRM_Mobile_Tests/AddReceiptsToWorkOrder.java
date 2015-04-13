@@ -24,7 +24,7 @@ public class AddReceiptsToWorkOrder extends CRM_Base {
 	 private WorkOrderDetailsView WorkOrder;
 	 private WorkOrdersReceiptsView Receipts;
 	 
-	 @BeforeClass
+	 @BeforeClass(alwaysRun=true)
 	    public void setUpSuite() {
 		ConnectionWithApplication("AddReceiptsToWorkOrder");
 		 WorkOrderList=Navigate.ToWorkOrderList();

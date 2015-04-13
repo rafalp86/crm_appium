@@ -21,6 +21,11 @@ public class GetBy  {
  	 {
 		 return By.xpath("//*[@resource-id='" + resorceid + "']");
  	 }
+	 
+	 public static By FSId(String id)
+ 	 {
+		 return ResourceId("com.friendlysol.android:id/"+id);
+ 	 }
 	 public static By ClassAndTextContains(UI.Class ClassName, String Text)
      {
          return By.xpath("//"+ClassName.toString()+"[contains(text(),'"+Text+"')]");

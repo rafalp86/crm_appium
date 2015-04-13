@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="Lib/sauce_testng-2.1.4.jar"/>
 	<classpathentry kind="lib" path="Lib/sauce_java_common-2.1.4.jar"/>
 	<classpathentry kind="lib" path="Lib/selenium-server-standalone-2.45.0.jar"/>
+	<classpathentry kind="lib" path="Lib/java-client-2.2.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

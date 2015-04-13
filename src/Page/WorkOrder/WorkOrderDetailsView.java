@@ -20,6 +20,7 @@ public class WorkOrderDetailsView extends UI{
 	public String WOExpectedDate;
 	
 	private By WorkOrderScrollArea= GetBy.className(Class.ScrollView);
+	private By WorkOrderNumber=GetBy.FSId("work_order_view_work_order_number");
 	private By TimerStartButton= GetBy.ClassAndText(Class.Button, "Timer Start");
 	private By TimerStopButton= GetBy.ClassAndText(Class.Button, "Timer Stop");
 	private By ConfirmWorkOrderStartButton= GetBy.ClassAndText(Class.Button, "Confirm Work Order");
@@ -27,7 +28,7 @@ public class WorkOrderDetailsView extends UI{
 	private By GetASignature= GetBy.ClassAndText(Class.Button, "Get a signature");
 	private By EnterReceiptsButton= GetBy.ClassAndText(Class.Button, "Enter receipts");
 	private By ShowStorePhotosButton6= GetBy.ClassAndText(Class.Button, "Show store photos");
-	private By ShowActivitiesButton= GetBy.ClassAndText(Class.Button, "Show activities");
+	private By ShowActivitiesButton= GetBy.ClassAndText(Class.Button, "show Activities");
 	private By PutOnHoldButton= GetBy.ClassAndText(Class.Button, "Put on hold");
 	private By LocationHistoryButton= GetBy.ClassAndText(Class.Button, "Location history");
 	private By LocationAssetsButton= GetBy.ClassAndText(Class.Button, "Location assets");
@@ -35,7 +36,7 @@ public class WorkOrderDetailsView extends UI{
 	private List<WebElement> AllTextInWO;
 	
 	public WorkOrderDetailsView(){
-		if(!ElementExist(WorkOrderScrollArea, 2))
+		if(!ElementExist(WorkOrderNumber, 8))
 			 Assert.fail("This is not WorkOrder Page");
 		SetAllTextInWO();
 		WoID=GetWorkOrderID();
@@ -44,7 +45,7 @@ public class WorkOrderDetailsView extends UI{
 		WOExpectedDate=GetWorkExpectedDate();
 	}
 	public WorkOrderDetailsView(int ID){
-		if(!ElementExist(WorkOrderScrollArea, 2))
+		if(!ElementExist(WorkOrderNumber, 2))
 			 Assert.fail("This is not WorkOrder Page");
 		SetAllTextInWO();
 		WoID=GetWorkOrderID();
@@ -58,9 +59,9 @@ public class WorkOrderDetailsView extends UI{
 	}
 	private String GetWorkOrderCustomerName()
 	{	
-		WebElement NameControl= AllTextInWO.get(2);
-		System.out.println(NameControl.getText());
-		return NameControl.getText();
+		String CustomerName= GetText(GetBy.ResourceId("com.friendlysol.android:id/work_order_view_customer"));
+		System.out.println(CustomerName);
+		return CustomerName;
 	}
 	
 	private String GetWorkOrderID()
@@ -72,9 +73,9 @@ public class WorkOrderDetailsView extends UI{
 	
 	private String GetWorkDescription()
 	{
-		WebElement NameControl= AllTextInWO.get(18);
-		System.out.println(NameControl.getText());
-		return NameControl.getText();
+		String CustomerName= GetText(GetBy.ResourceId("com.friendlysol.android:id/work_order_view_work_order_description"));
+		System.out.println(CustomerName);
+		return CustomerName;
 	}
 	
 	private String GetWorkExpectedDate()

@@ -15,7 +15,7 @@ public class DisplayWorkOrderList extends CRM_Base {
 	private WorkOrderListView WorkOrderList;
 	private WorkOrderListViewSubMenu WorkOrderListSubMenu;
 	
-	@BeforeClass
+	 @BeforeClass(alwaysRun=true)
     public void setUp()
  {
 	ConnectionWithApplication("DisplayWorkOrderList");

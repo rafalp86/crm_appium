@@ -14,7 +14,8 @@ import UI.UI;
 public class Navigate extends UI {
 
 	private static By WorkOrderListItem= GetBy.ClassAndText(Class.TextView,"Work order list");
-	private static By  ProccedButton= GetBy.ClassAndText(Class.Button,"Proceed");
+	private static By  ProccedDialogButton= GetBy.ClassAndText(Class.Button,"Proceed");
+	private static By  ContinueButton= GetBy.ClassAndText(Class.Button,"Continue");
 	
 	public static WorkOrderListView ToWorkOrderList()
 	{	
@@ -36,21 +37,25 @@ public class Navigate extends UI {
 	
 	public static Menu ToMainMenu(){
 		TapIfExist(GetBy.Text("Friendly Solutions"),1);
-		if (UI.ElementExist(ProccedButton,2))
+		if (UI.ElementExist(ProccedDialogButton,2))
 		{
-			return (new InformationView()).Procced();
+			ToInformationPage().Procced();
 		}
 		return new Menu();
 	}
 	
     public static  InformationView ToInformationPage(){ 
     	TapIfExist(GetBy.Text("Friendly Solutions"),1);
-    	String textInPage=UI.GetTextFromAllChildren(null);
+    	while(!UI.ElementExist(ContinueButton, 2))
+    	{
+    		Back();
+    	}
+    	/*String textInPage=UI.GetTextFromAllChildren(null);
     	if (textInPage.contains("#"))
     	{
     		Back();Back();
     	}	
-    	if (textInPage.contains("Work order list"))	Back();
+    	if (textInPage.contains("Work order list"))	Back();*/
 		return new InformationView();
 	}
     

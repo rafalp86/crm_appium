@@ -69,7 +69,7 @@ public class WorkOrderDetailsViewSubMenu extends UI{
 		SetText(EditArea.get(1), Sday);	
 		SetText(EditArea.get(2), Syear);	
 		Screenshot("WOExtendDateCalender");
-		Tap(GetBy.ClassAndText(Class.Button,"Done"));
+		Tap(GetBy.ClassAndText(Class.Button,"Save"));
 		SetWOExtendingReason(ExtendingReason);
 		return new WorkOrderListView();
 	}

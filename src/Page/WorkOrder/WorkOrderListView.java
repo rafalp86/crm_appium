@@ -15,6 +15,7 @@ public class WorkOrderListView extends UI{
 	private By WoHashElemet= WoDate= WoItem.className(Class.RelativeLayout.toString()).className(Class.TextView.toString());;
 	private By WoDescriptioArea= WoItem.className("WO WoDescriptioArea");
 	private By WaitMessage= GetBy.ClassAndText(Class.TextView, "Please wait...");
+	private By CodeElemet=GetBy.FSId("wo_list_work_order_number");
 	
 	public WorkOrderListView(){
 		WaitForLoading();
@@ -35,9 +36,7 @@ public class WorkOrderListView extends UI{
 	
 	public String GetFirstWorkOrderCode()
 	{
-		WebElement WOItem= Find(WoItem);
-		WebElement HashElement= WOItem.findElements(By.className(Class.TextView.toString())).get(1);
-	 return HashElement.getText();
+	 return GetText(CodeElemet);
 	}
 	
 	public String GetWorkOrderById(int workOrderID)

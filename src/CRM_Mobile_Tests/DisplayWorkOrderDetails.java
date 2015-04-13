@@ -24,10 +24,10 @@ public class DisplayWorkOrderDetails extends CRM_Base {
 	private WorkOrderListView WorkOrderList;
 	private WorkOrderDetailsView WorkOrder;
 	private WorkOrderDetailsViewSubMenu WorkOrderSubMenu;
-//	private String expectedDescription="Appium test";
-	private String expectedDescription="Receipts test";
+	private String expectedDescription="Appium test";
+	//private String expectedDescription="Receipts test";
 	
-	@BeforeClass
+	 @BeforeClass(alwaysRun=true)
     public void setUp()
 	 {
 		ConnectionWithApplication("DisplayWorkOrderDetails");

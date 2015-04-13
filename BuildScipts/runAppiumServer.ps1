@@ -27,12 +27,13 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
     "Run Appium server"
     "Appium dir:"+$Env:APPIUM
      $EnDevComand="--avd "+$EmulatorName
+
      if($runInDevice) {$EnDevComand="--device-name "+$deviceName }
 
     Start-Process -FilePath ($Env:APPIUM+"\..\..\node.exe") -ArgumentList  ($Env:APPIUM+"\lib\server\main.js --address 127.0.0.1 --port 4723 --app "+$apkFile+" "+$EnDevComand+ " --log-timestamp --log c:\AppiumForm.txt --platform-name Android --platform-version 19 --automation-name Appium --log-no-color")
     
 
-   sleep(5)
+   sleep(8)
   "Appium proces started: "+ (Get-Process | Where {$_.ProcessName -eq $appiumProcess} |measure).Count
 
 if($resetEmulator)

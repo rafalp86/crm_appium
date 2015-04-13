@@ -24,7 +24,7 @@ public class AddPhotoToWorkOrder extends CRM_Base {
 	private String WoDescription="Appium test";
 	private Random RandInt= new Random();
 	
-	 @BeforeClass
+	 @BeforeClass(alwaysRun=true)
 	    public void setUpSuite()
 	 {
 		ConnectionWithApplication("AddPhotoToWorkOrder");

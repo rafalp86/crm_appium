@@ -19,7 +19,7 @@ public class StartStopTimerAndLogTimeInTimeSheet extends CRM_Base {
 	private WorkOrderDetailsView WorkOrder;
 	private String WoDescription="Appium test, start /stop time ";
 	
-	 @BeforeClass
+	 @BeforeClass(alwaysRun=true)
 	    public void setUpSuite()
 	 {
 		ConnectionWithApplication("StartStopTimerAndLogTimeInTimeSheet");

@@ -9,7 +9,8 @@ import UI.UI;
 
 public class InformationView extends UI{
 	
-	private By  ProccedButton= GetBy.ClassAndText(Class.Button,"Proceed");
+	private By  ProccedDialogButton= GetBy.ClassAndText(Class.Button,"Proceed");
+	private By  ProccedButton= GetBy.ClassAndText(Class.Button,"Continue");
 	//private By  ProccedButton= By.className(GetBy.Class.Button.toString());
 
 	private By  StatusArea= By.className(Class.LinearLayout.toString());
@@ -32,8 +33,8 @@ public class InformationView extends UI{
 	
 	public void CloseAlerts()
 	{
-		if (UI.ElementExist(SdCardMemoryInfo,1))  UI.Tap(ProccedButton);
-		if (UI.ElementExist(SdCardMemoryInstalation,0))  UI.Tap(ProccedButton);
+		if (UI.ElementExist(SdCardMemoryInfo,1))  UI.Tap(ProccedDialogButton);
+		if (UI.ElementExist(SdCardMemoryInstalation,0))  UI.Tap(ProccedDialogButton);
 		//more alert
 	}
 	

@@ -1,5 +1,8 @@
 package UI;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.net.URL;
@@ -31,7 +34,8 @@ public class CRM_Base{
 	public static Config appConfig = new Config();
 	
 	
-	protected static WebDriver driver;
+	//protected static WebDriver driver;
+	protected static AppiumDriver driver;
 	protected  WebDriver ConnectionWithApplication() 
 	{ return ConnectionWithApplication("Test");}
 	
@@ -42,8 +46,22 @@ public class CRM_Base{
 		driver= null;
 		try
 		{
-			driver= appConfig.getBool("RunLocal")?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test")):
-				new RemoteWebDriver(new URL("http://friendlysol:aa94af2b-1539-42c3-b804-590efaf1b51c@ondemand.saucelabs.com:80/wd/hub"), Configuration(TestName));
+			driver= new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test")) {
+				
+				@Override
+				public MobileElement scrollToExact(String arg0) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public MobileElement scrollTo(String arg0) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+			};
+			//driver= appConfig.getBool("RunLocal")?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test")):
+			//	new RemoteWebDriver(new URL("http://friendlysol:aa94af2b-1539-42c3-b804-590efaf1b51c@ondemand.saucelabs.com:80/wd/hub"), Configuration(TestName));
 			
 			//driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		}
@@ -53,7 +71,7 @@ public class CRM_Base{
 		}
 		System.out.println("Connect  with application");
 		System.out.println("Test :"+TestName);
-		   
+		driver.resetApp();
 		WaitForApplication();
 		return driver;
 	}

@@ -1,6 +1,10 @@
 package Action;
 
 
+import io.appium.java_client.MobileDriver;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.TouchShortcuts;
+
 import java.util.HashMap;
 import org.openqa.selenium.By;
 
@@ -14,13 +18,17 @@ public class Gestures extends UI {
 	 {
 		 try
 		 {
-		 HashMap<String, Double> swipeObject = new HashMap<String, Double>();
+			
+		 /*HashMap<String, Double> swipeObject = new HashMap<String, Double>();
 		 swipeObject.put("startX", startX);
 		 swipeObject.put("startY",startY);
 		 swipeObject.put("endX", endX);
 		 swipeObject.put("endY", endY);
-		 swipeObject.put("duration", 1.9);
-		 ExeciutJS("mobile: swipe", swipeObject);
+		 swipeObject.put("duration", 1.9);*/
+			 TouchAction action = new TouchAction((MobileDriver) driver);
+			 action.press((int)startX, (int)startY).waitAction(500).moveTo((int)endX, (int)endY).release().perform();
+	    //TouchShortcuts.c Swip((int)startX,(int)startY,(int)endX,(int)endY);
+		// ExeciutJS("mobile: swipe", swipeObject);
 		 }
 		 catch (Exception ex )
 		 {
@@ -36,7 +44,8 @@ public class Gestures extends UI {
 		{
 			if (ElementExist(element, 0)) break;
 			System.out.println("Scroll: h="+((double)FrameSize.height-50)+"w="+(double)FrameSize.width/2);
-			Scroll((double)FrameSize.width/2,(double)FrameSize.height-50, (double)FrameSize.width/2, 5.);
+			Scroll((double)FrameSize.width/2,(double)FrameSize.height-50, (double)FrameSize.width/3, 5.);
+			sleep(500);  
 		}
 	}
 	
@@ -61,6 +70,17 @@ public class Gestures extends UI {
 			lastText=currentText;
 			Scroll((double)FrameSize.width/2,(double)FrameSize.height-50, (double)FrameSize.width/2, 5.);;		
 			}
+	}
+	
+	private static void sleep(int milSec)
+	{
+		try {
+			Thread.sleep(milSec);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
+	
 	}
 		
 }
