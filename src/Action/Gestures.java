@@ -39,6 +39,7 @@ public class Gestures extends UI {
 	//dodac opcje skrolowania 
 	public static void ScollTo(By element)
 	{
+		System.out.println("Scroll to :"+element);
 		org.openqa.selenium.Dimension FrameSize =driver.manage().window().getSize();
 		for(int i=0;i<15;i++)
 		{
@@ -58,7 +59,7 @@ public class Gestures extends UI {
 			currentText=FindLast(GetBy.className(Class.TextView)).getText();
 			System.out.println("C :"+currentText+" L:"+lastText);
 			lastText=currentText;
-			Scroll(1.,720, 1., 1.);		
+			Scroll((double)FrameSize.width/2,(double)FrameSize.height-50, (double)FrameSize.width/2, 5.);	
 			}*/
 		String lastText="";
 		String currentText="";

@@ -3,13 +3,13 @@
 $apkFile='D:\Project\GIT\crm_appium\resources\mobile.apk'
 $EmulatorName='crm'
 $deviceName="05a897ce0fa2f571"
-$runInDevice=$False
+$runInDevice=$True
 
 $resetEmulator=$false
 
 if($args[0] -ne $null) { $EmulatorName=$args[0] ; $EmulatorName }
 if($args[1] -ne $null) { $apkFile=$args[1] ; $apkFile}
-if($args[2] -ne $null) { $runInDevice=$args[2] ; "Run in device :"+$runInDevice }
+if($args[2] -ne $null) { $runInDevice=$False ; "Run in device :"+$runInDevice }
 
 
 $appiumProcess='node'

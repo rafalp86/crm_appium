@@ -11,22 +11,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.SessionId;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
-
-import com.saucelabs.common.SauceOnDemandAuthentication;
-import com.saucelabs.common.SauceOnDemandSessionIdProvider;
-import com.saucelabs.testng.SauceOnDemandAuthenticationProvider;
-import com.saucelabs.testng.SauceOnDemandTestListener;
 
 
 public class CRM_Base{
@@ -60,10 +48,7 @@ public class CRM_Base{
 					return null;
 				}
 			};
-			//driver= appConfig.getBool("RunLocal")?new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), Configuration("Test")):
-			//	new RemoteWebDriver(new URL("http://friendlysol:aa94af2b-1539-42c3-b804-590efaf1b51c@ondemand.saucelabs.com:80/wd/hub"), Configuration(TestName));
 			
-			//driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		}
 		catch (Exception ex)
 		{
@@ -134,7 +119,6 @@ public class CRM_Base{
        return capabilities;
       }
 
-
     private void WaitForApplication()
     {
     	int timeout=0;
@@ -150,4 +134,5 @@ public class CRM_Base{
 	    	timeout++;	    	
     	} while (timeout <10);
     }
+    
 }

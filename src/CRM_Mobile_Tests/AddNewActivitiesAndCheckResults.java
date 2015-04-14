@@ -1,8 +1,6 @@
 package CRM_Mobile_Tests;
 
 import java.util.Random;
-
-import org.apache.james.mime4j.field.datetime.DateTime;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

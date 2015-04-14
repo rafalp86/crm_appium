@@ -43,9 +43,11 @@ public class Navigate extends UI {
     public static  InformationView ToInformationPage(){ 
     	TapIfExist(GetBy.Text("Friendly Solutions"),1);
     	TapIfExist(GetBy.Text("ProccedDialogButton"),2);
-    	while(!UI.ElementExist(ContinueButton, 2))
+    	int pressTimeout=0;
+    	while(!UI.ElementExist(ContinueButton, 2) || pressTimeout>8)
     	{
     		Back();
+    		pressTimeout++;
     	}
     	/*String textInPage=UI.GetTextFromAllChildren(null);
     	if (textInPage.contains("#"))
