@@ -19,12 +19,7 @@ public class Navigate extends UI {
 	
 	public static WorkOrderListView ToWorkOrderList()
 	{	
-		if (UI.ElementExist(GetBy.ClassAndText(Class.TextView, "Activities"),0))
-		{
-			Back();Back();
-			return new WorkOrderListView();
-		}
-	
+		
 		Menu mainMenu=ToMainMenu();
 		return  mainMenu.ChooseWorkOrderList();
 	}

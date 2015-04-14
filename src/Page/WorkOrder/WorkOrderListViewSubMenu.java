@@ -17,8 +17,8 @@ public class WorkOrderListViewSubMenu extends UI {
 	private By RefreshItem= GetBy.ClassAndText(Class.TextView,"Refresh");
 	
 	public WorkOrderListViewSubMenu() {
-		if (!UI.ElementExist(SortingItem,2) || !UI.ElementExist(ShowPutOnHoldCheckbox,1))
-		Assert.fail("This is not Menu Page");
+		if (!UI.ElementExist(SortingItem,5) || !UI.ElementExist(ShowPutOnHoldCheckbox,1))
+		Assert.fail("This is not  Work order SubMenu");
 	}
 
 	public boolean ItemExist(String ItemName){
