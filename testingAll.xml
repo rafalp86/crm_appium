@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Default suite">
-  <test verbose="2" name="Default test">
+  <test verbose="2" name="AddNewActivitiesAndCheckResults">
     <classes>	
-      <class name="CRM_Mobile_Tests.AddNewActivitiesAndCheckResults"/>
-	<class name="CRM_Mobile_Tests.DisplayWorkOrderDetails"/>
-	
-	<class name="CRM_Mobile_Tests.DisplayInformationPage"/>
-	<class name="CRM_Mobile_Tests.DisplayMainMenu"/>
+      <class name="CRM_Mobile_Tests.AddNewActivitiesAndCheckResults"/>        
+    </classes>
+  </test>
+ <test verbose="2" name="DisplayWorkOrderDetails">
+    <classes>	
+	<class name="CRM_Mobile_Tests.DisplayWorkOrderDetails"/>         
+    </classes>
+  </test>  <test verbose="2" name="DisplayInformationPage">
+    <classes>		
+	<class name="CRM_Mobile_Tests.DisplayInformationPage"/>        
+    </classes>
+  </test>  <test verbose="2" name="DisplayMainMenu">
+    <classes>	
+	<class name="CRM_Mobile_Tests.DisplayMainMenu"/>          
+    </classes>
+  </test>  <test verbose="2" name="DisplayWorkOrderList">
+    <classes>	
 	  <class name="CRM_Mobile_Tests.DisplayWorkOrderList"/>          
     </classes>
-  </test> <!-- Default test -->
+  </test> 
+  <!-- Default test -->
 </suite> <!-- Default suite -->
