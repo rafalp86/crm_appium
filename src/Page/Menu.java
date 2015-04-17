@@ -64,7 +64,7 @@ public class Menu extends UI {
  
  public void ScrollUp()
  {
-	Gestures.Scroll(100.,200.,100.,700.);
+	Gestures.ScrollToUp();
  }
  
  public String Submenu () {

@@ -50,6 +50,12 @@ public class Gestures extends UI {
 		}
 	}
 	
+	public static void ScrollToUp()
+	{
+		org.openqa.selenium.Dimension FrameSize =driver.manage().window().getSize();
+		Gestures.Scroll((double)FrameSize.width/2,(double)FrameSize.height/4.,(double)FrameSize.width/2,(double)FrameSize.height-50);
+	}
+	
 	public static void ScrollToEnd()
 	{
 		/*String lastText="";

@@ -25,7 +25,8 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
 
     "Stop Appium server"
      Get-Process | Where {$_.ProcessName -like $appiumProcess} | foreach{$_.Kill()}
-
+	 "Kill emulator"
+	 Get-Process | Where {$_.ProcessName -like $emulatorProcess} | foreach{$_.Kill()}
     "Run Appium server"
     "Appium dir:"+$Env:APPIUM
      $EnDevComand="--avd "+$EmulatorName
@@ -40,13 +41,7 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
 	sleep($sleeptime)
   "Appium proces started: "+ (Get-Process | Where {$_.ProcessName -eq $appiumProcess} |measure).Count
 
-if($resetEmulator)
-{
-"Kill emulator"
- Get-Process | Where {$_.ProcessName -like $emulatorProcess} | foreach{$_.Kill()}
- #Start-Process -FilePath emulator  -ArgumentList ("-avd "+$EmulatorName+" -partition-size 1024 -gpu on -verbose")
-  
-}
+
 
 #Start-Process -FilePath "D:\Project\GIT\crm_appium\BuildScipts\runTests.cmd"
 
