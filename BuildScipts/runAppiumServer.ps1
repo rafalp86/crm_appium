@@ -4,7 +4,7 @@ $apkFile='D:\Project\GIT\crm_appium\resources\mobile.apk'
 $lofFile="C:\AppiumForm.txt"
 $EmulatorName='crm'
 $deviceName="05a897ce0fa2f571"
-$runInDevice=$False
+$runInDevice=$True
 
 $resetEmulator=$false
 
@@ -16,15 +16,15 @@ if($args[3] -ne $null) { $lofFile=$args[3] ; "Appium log  :"+$lofFile }
 
 $appiumProcess='node'
 $SeleniumProcess='java'
-$emulatorProcess='emulator'
-$AppiumProcessCount=(Get-Process | Where {$_.ProcessName -eq $appiumProcess} |measure).Count
-$SeleniumProcessCount=(Get-Process | Where {$_.ProcessName -eq $SeleniumProcess} |measure).Count
+$emulatorProcess='emulato*'
+$AppiumProcessCount=(Get-Process | Where {$_.ProcessName -like $appiumProcess} |measure).Count
+$SeleniumProcessCount=(Get-Process | Where {$_.ProcessName -like $SeleniumProcess} |measure).Count
 
 Write-Host $AppiumProcessCount , $SeleniumProcessCount
 
 
     "Stop Appium server"
-     Get-Process | Where {$_.ProcessName -eq $appiumProcess} | foreach{$_.Kill()}
+     Get-Process | Where {$_.ProcessName -like $appiumProcess} | foreach{$_.Kill()}
 
     "Run Appium server"
     "Appium dir:"+$Env:APPIUM
@@ -32,7 +32,7 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
 
      if($runInDevice) {$EnDevComand="--device-name "+$deviceName }
 
-    Start-Process -FilePath ($Env:APPIUM+"\..\..\node.exe") -ArgumentList  ($Env:APPIUM+"\lib\server\main.js --address 127.0.0.1 --port 4723 --app "+$apkFile+" "+$EnDevComand+ " --log-timestamp --log "+$lofFile+" --platform-name Android --platform-version 19 --automation-name Appium --log-no-color")
+    Start-Process -FilePath ($Env:APPIUM+"\..\..\node.exe") -ArgumentList  ($Env:APPIUM+"\lib\server\main.js --address 127.0.0.1 --port 4723 --session-override --app "+$apkFile+" "+$EnDevComand+ " --log-timestamp --log "+$lofFile+" --platform-name Android --platform-version 19 --automation-name Appium --log-no-color")
     
     $sleeptime=0
     if($runInDevice) { $sleeptime=5} else {$sleeptime=10}
@@ -43,7 +43,7 @@ Write-Host $AppiumProcessCount , $SeleniumProcessCount
 if($resetEmulator)
 {
 "Kill emulator"
- Get-Process | Where {$_.ProcessName -eq $emulatorProcess} | foreach{$_.Kill()}
+ Get-Process | Where {$_.ProcessName -like $emulatorProcess} | foreach{$_.Kill()}
  #Start-Process -FilePath emulator  -ArgumentList ("-avd "+$EmulatorName+" -partition-size 1024 -gpu on -verbose")
   
 }

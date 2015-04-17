@@ -20,6 +20,12 @@ public class Navigate extends UI {
 	public static WorkOrderListView ToWorkOrderList()
 	{	
 		
+		if (UI.ElementExist(GetBy.ClassAndText(Class.TextView, "Activities"),0))
+		{
+			Back();Back();
+			return new WorkOrderListView();
+		}
+	
 		Menu mainMenu=ToMainMenu();
 		return  mainMenu.ChooseWorkOrderList();
 	}
@@ -31,26 +37,32 @@ public class Navigate extends UI {
 	}
 	
 	public static Menu ToMainMenu(){
-		return ToInformationPage().Procced();
+		TapIfExist(GetBy.Text("Friendly Solutions"),1);
+		TapIfExist(ProccedDialogButton,1);
+		if (UI.ElementExist(ContinueButton,2))
+		{
+			return (new InformationView()).Procced();
+		}
+		return new Menu();
 
 	}
 	
     public static  InformationView ToInformationPage(){ 
     	TapIfExist(GetBy.Text("Friendly Solutions"),1);
-    	TapIfExist(GetBy.Text("ProccedDialogButton"),2);
+    	/*TapIfExist(GetBy.Text("ProccedDialogButton"),2);
     	int pressTimeout=0;
     	while(!UI.ElementExist(ContinueButton, 2) && pressTimeout<8)
     	{
     		Back();
     		pressTimeout++;
     	}
-    	if (pressTimeout>7)driver.resetApp();
-    	/*String textInPage=UI.GetTextFromAllChildren(null);
+    	if (pressTimeout>7)driver.resetApp();*/
+    	String textInPage=UI.GetTextFromAllChildren(null);
     	if (textInPage.contains("#"))
     	{
     		Back();Back();
     	}	
-    	if (textInPage.contains("Work order list"))	Back();*/
+    	if (textInPage.contains("Work order list"))	Back();
 		return new InformationView();
 	}
     
