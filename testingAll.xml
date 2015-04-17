@@ -8,19 +8,27 @@
   </test>
  <test verbose="2" name="DisplayWorkOrderDetails">
     <classes>	
-	<class name="CRM_Mobile_Tests.DisplayWorkOrderDetails"/>         
+		<class name="CRM_Mobile_Tests.DisplayWorkOrderDetails"/>         
     </classes>
-  </test>  <test verbose="2" name="DisplayInformationPage">
+  </test> 
+  <test verbose="2" name="DisplayInformationPage">
     <classes>		
-	<class name="CRM_Mobile_Tests.DisplayInformationPage"/>        
+		<class name="CRM_Mobile_Tests.DisplayInformationPage"/>        
     </classes>
-  </test>  <test verbose="2" name="DisplayMainMenu">
+  </test> 
+  <test verbose="2" name="DisplayMainMenu">
     <classes>	
-	<class name="CRM_Mobile_Tests.DisplayMainMenu"/>          
+		<class name="CRM_Mobile_Tests.DisplayMainMenu"/>          
     </classes>
-  </test>  <test verbose="2" name="DisplayWorkOrderList">
+  </test>
+  <test verbose="2" name="DisplayWorkOrderList">
     <classes>	
 	  <class name="CRM_Mobile_Tests.DisplayWorkOrderList"/>          
+    </classes>
+  </test> 
+  <test verbose="2" name="AddPhotoToWorkOrder">
+    <classes>	
+	  <class name="CRM_Mobile_Tests.AddPhotoToWorkOrder"/>          
     </classes>
   </test> 
   <!-- Default test -->

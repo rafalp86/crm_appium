@@ -46,7 +46,7 @@ public class WorkOrderDetailsViewSubMenu extends UI{
 		Tap(AddPhoto);
 		WaitAndTap(GetBy.Text("Device camera"));
 		Screenshot("AddPhoto_ChooseDevice");
-		WaitAndTap(GetBy.Text("after job"));
+		WaitAndTap(GetBy.Text("after"));
 		//WaitAndClick(ShutterButton);
 		//Screenshot("AddPhoto_GetPhoto");
 		//FindLast(GetBy.className(Class.ImageView)).click();
