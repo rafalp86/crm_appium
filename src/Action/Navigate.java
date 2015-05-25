@@ -61,8 +61,10 @@ public class Navigate extends UI {
     	if (textInPage.contains("#"))
     	{
     		Back();Back();
+    		return new InformationView();
     	}	
-    	if (textInPage.contains("Work order list"))	Back();
+    	
+    	if (UI.ElementExist(WorkOrderListItem,1))	{System.out.println("WOL");Back();}
 		return new InformationView();
 	}
     
