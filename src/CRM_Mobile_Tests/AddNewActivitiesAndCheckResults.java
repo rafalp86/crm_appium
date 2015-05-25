@@ -38,7 +38,7 @@ public class AddNewActivitiesAndCheckResults extends CRM_Base {
 		 WorkOrderList=Navigate.ToWorkOrderList();
 	 }
 	 
-	//@Test
+	@Test
 	 public void AddActivitiesBySubMenu()
 	 {		 
 		 ActivitiesMessage="Activities, Appium test "+ RandInt.nextInt(100000);
@@ -59,7 +59,7 @@ public class AddNewActivitiesAndCheckResults extends CRM_Base {
 		 
 	 }
 	 
-	 @Test
+	@Test
 	 public void AddActivitiesInActivitisView()
 	 {	 
 		 ActivitiesMessage="Activities, add in activitis view "+ RandInt.nextInt(100000);

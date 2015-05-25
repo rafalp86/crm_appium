@@ -58,27 +58,24 @@ public class Gestures extends UI {
 	
 	public static void ScrollToEnd()
 	{
-		/*String lastText="";
-		String currentText="";
-		while(!lastText.equalsIgnoreCase(FindLast(GetBy.className(Class.TextView)).getText()))
-			{
-			currentText=FindLast(GetBy.className(Class.TextView)).getText();
-			System.out.println("C :"+currentText+" L:"+lastText);
-			lastText=currentText;
-			Scroll((double)FrameSize.width/2,(double)FrameSize.height-50, (double)FrameSize.width/2, 5.);	
-			}*/
+		ScrollToEnd(GetBy.className(Class.TextView));
+	}
+	
+	public static void ScrollToEnd(By elemet)
+	{
 		String lastText="";
 		String currentText="";
 		org.openqa.selenium.Dimension FrameSize =driver.manage().window().getSize();
-		while(!lastText.equalsIgnoreCase(FindLast(GetBy.className(Class.TextView)).getText()))
+		WaitForElement(elemet, 2);
+		while(!lastText.equalsIgnoreCase(FindLast(elemet).getText()))
 			{
-			currentText=FindLast(GetBy.className(Class.TextView)).getText();
+			currentText=FindLast(elemet).getText();
 			System.out.println("C :"+currentText+" L:"+lastText);
 			lastText=currentText;
 			Scroll((double)FrameSize.width/2,(double)FrameSize.height-50, (double)FrameSize.width/2, 5.);;		
 			}
+		System.out.println("C :"+currentText+" L:"+lastText);
 	}
-	
 	private static void sleep(int milSec)
 	{
 		try {

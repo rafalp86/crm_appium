@@ -28,7 +28,7 @@ public class WorkOrderDetailsView extends UI{
 	private By GetASignature= GetBy.ClassAndText(Class.Button, "Get a signature");
 	private By EnterReceiptsButton= GetBy.ClassAndText(Class.Button, "Enter receipts");
 	private By ShowStorePhotosButton6= GetBy.ClassAndText(Class.Button, "Show store photos");
-	private By ShowActivitiesButton= GetBy.ClassAndText(Class.Button, "show Activities");
+	private By ShowActivitiesButton= GetBy.ClassAndText(Class.Button, "Show activities");
 	private By PutOnHoldButton= GetBy.ClassAndText(Class.Button, "Put on hold");
 	private By LocationHistoryButton= GetBy.ClassAndText(Class.Button, "Location history");
 	private By LocationAssetsButton= GetBy.ClassAndText(Class.Button, "Location assets");

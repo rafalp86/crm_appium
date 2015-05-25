@@ -25,7 +25,7 @@ public class DisplayInformationPage extends CRM_Base {
 	 @Test 
 	  public void ShouldDisplayInformationPanel() 
 	    {
-		 String ExpectedStatus="184";
+		 String ExpectedStatus="187";
 		 String ExpectedInformation="Version 109";
 
 		 Assert.assertTrue(InformationSite.GetStatusNote().contains(ExpectedStatus),"Unexpected :"+InformationSite.GetStatusNote());

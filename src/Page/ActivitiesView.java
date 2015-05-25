@@ -12,14 +12,18 @@ import UI.UI;
 import UI.UI.Class;
 
 public class ActivitiesView extends UI{
+	//com.friendlysol.android:id/li_textview_subject
+	private By ActivityText= GetBy.FSId("li_textview_subject");
 
 	public String LatestActivities() {
-		Gestures.ScrollToEnd();
-		List<WebElement> AllLinearLayout= Finds(GetBy.className(Class.LinearLayout));
+		System.out.println("Get last Latest Activities");
+		Gestures.ScrollToEnd(ActivityText);
+		return  FindLast(ActivityText).getText();
+	/*	List<WebElement> AllLinearLayout= Finds(GetBy.className(Class.LinearLayout));
 		WebElement lastActivities=AllLinearLayout.get(AllLinearLayout.size()-2);// -2 because last is only only Emploer 
 		String lastPost=UI.GetTextFromAllChildren(lastActivities);
 		return lastPost;
-
+*/
 	}
 	
 	public void AddActivity(String Employee, String Message) {
